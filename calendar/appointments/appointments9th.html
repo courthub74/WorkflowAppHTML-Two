@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="appointments9th.css">
+    <title>Make an Appointment</title>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+        <div class="header">
+            <!-- Sidebar Header -->
+            <a href="/homepage/home.html">
+                <h2>Workflow Machine</h2>
+                <img src="/img/white_logo_transparent_background.png" alt="logo">
+            </a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu">
+            <ul>
+                <li><a href="/calendar/calendar.html">
+                    <span class="icon"><img src="/img/bxs_calendar.png" alt="calendar"></span>
+                    <span class="item">calendar</span>
+                    <span class="check"><img src="/img/languages/check.png" alt="currentpage"></span>
+                </a></li>
+
+                <li><a href="/notes/notes.html">
+                    <span class="icon"><img src="/img/charm_notes-tick.png" alt="notes"></span>
+                    <span class="item">notes</span>
+                </a></li>
+
+                <li><a href="/tasks/tasks.html">
+                    <span class="icon"><img src="/img/clarity_tasks-line.png" alt="todos"></span>
+                    <span class="item">tasks</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="/img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                    <span class="item">spreadsheet</span>
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="logoutbutton">
+            <button class="logout"><a href="/loginpage/login.html">Logout</a></button>
+        </div>
+    </div>
+
+    <div class="page">
+        <form action="POST">
+            <h1>Make an Appointment</h1>
+            <h3>For June 9th 2023</h3>
+            <div class="apptbox">
+                <h3>What is the appointment type?</h3>
+                <p><a href="/phonecall/phonecall.html">Phone Call</a></p>
+                <hr>
+                <p><a href="/zoomcall/zoomcall.html">Zoom Meeting</a></p>
+                <hr>
+                <p><a href="#">In Person Meeting</a></p>
+                <hr>
+                <p><a href="#">Appearence</a></p>
+            </div>
+        </form>
+        <!-- Appointment Settings -->
+        <div id="apptsettings">
+            <img src="/img/Settings.png" alt="settings">
+            <span><a href="#">Appointment Settings</a></span>
+        </div>
+    </div>
+    
+</body>
+</html>

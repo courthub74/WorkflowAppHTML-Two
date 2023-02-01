@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+* body {
+  background-color: #F3F9FF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+* .sidebar {
+  background-color: #243F67;
+  width: 280px;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+* .sidebar .header {
+  text-align: center;
+  margin: 20px;
+}
+* .sidebar .header h2 {
+  color: white;
+  padding-bottom: 30px;
+}
+* .sidebar .header img {
+  width: 120px;
+  height: 120px;
+}
+* .sidebar .menu {
+  padding-top: 90px;
+  padding-left: 40px;
+}
+* .sidebar .menu ul li a {
+  padding-left: 10px;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  line-height: 70px;
+}
+* .sidebar .menu ul li a .icon img {
+  top: 5px;
+  width: 25px;
+  display: inline-block;
+}
+* .sidebar .menu ul li .check {
+  height: 20px;
+}
+* .sidebar .menu ul li .check img {
+  width: 25px;
+}
+* .sidebar .logoutbutton {
+  padding-top: 200px;
+  height: 20px;
+  text-align: center;
+}
+* .sidebar .logoutbutton .logout {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+* .sidebar .logoutbutton .logout a {
+  color: #243F67;
+}
+* .wrapper .header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+* .wrapper .header h1 {
+  font-size: 2.5rem;
+  color: #243F67;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+* .wrapper .header #deliverables-fill-form {
+  display: flex;
+}
+* .wrapper .header #deliverables-input {
+  flex: 1 1 0%;
+  background-color: #243F67;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+}
+* .wrapper .header #deliverables-input::-moz-placeholder {
+  color: #6B7280;
+}
+* .wrapper .header #deliverables-input:-ms-input-placeholder {
+  color: #6B7280;
+}
+* .wrapper .header #deliverables-input::placeholder {
+  color: #6B7280;
+}
+* .wrapper .header #deliverables-input:active {
+  color: white;
+  background-color: #243F67;
+}
+* .wrapper .header #deliverables-submit {
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #243F67;
+  border: #243F67 2px solid;
+  border-radius: 5px;
+  background: none;
+  text-align: center;
+  width: 175px;
+}
+* .wrapper .header #deliverables-submit:active {
+  opacity: 0.6;
+  background-color: #243F67;
+  color: #F3F9FF;
+  transition: all 0.1s ease-in;
+  border-radius: 10px;
+}
+* .wrapper .header #deliverables-submit:hover {
+  background-color: #243F67;
+  color: #F3F9FF;
+  transition: all 0.1s ease-in;
+}
+* .wrapper main {
+  flex: 1 1 0%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+* .wrapper main .deliverables-list {
+  padding: 1rem;
+}
+* .wrapper main .deliverables-list .outline {
+  border: 2px solid #243F67;
+  height: 655px;
+  padding: 40px;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block {
+  padding: 30px;
+  overflow-y: scroll;
+  height: 550px;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block .deliverable_items {
+  background-color: #243F67;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block .deliverable_items #content {
+  display: flex;
+  justify-content: space-between;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block .deliverable_items #content input {
+  background-color: #243F67;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.4s ease-in;
+  width: 300px;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block .deliverable_items #content input:not(:-moz-read-only) {
+  color: #11B386;
+  -moz-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  outline: none;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block .deliverable_items #content input:not(:read-only) {
+  color: #11B386;
+  transition: all 0.4s ease-in;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block .deliverable_items .buttons {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block .deliverable_items .buttons button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block .deliverable_items .buttons .edit {
+  background-color: #243F67;
+  color: #11B386;
+  border: none;
+  font-size: 15px;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block .deliverable_items .buttons .delete {
+  background-color: #243F67;
+  color: #3292FA;
+  border: none;
+  font-size: 15px;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block .deliverable_items .buttons .cross {
+  background-color: #243F67;
+  color: white;
+  border: none;
+  font-size: 15px;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block::-webkit-scrollbar {
+  border: 1px solid #243F67;
+  border-radius: 10px;
+}
+* .wrapper main .deliverables-list .outline #deliverables_block::-webkit-scrollbar-thumb {
+  background: #243F67;
+  border-radius: 10px;
+}
+* .wrapper main .deliverables-list .outline .back {
+  display: flex;
+  justify-content: right;
+  padding: 20px 50px 0px 0px;
+}
+* .wrapper main .deliverables-list .outline .back #arrow img {
+  width: 20px;
+  height: 20px;
+}
+* .wrapper main .deliverables-list .outline .back a {
+  color: #243F67;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding-left: 5px;
+}/*# sourceMappingURL=deliverables.css.map */

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="phonecall.css">
+    <title>Phone Call</title>
+</head>
+<body>
+
+     <!-- SIDEBAR -->
+
+     <div class="sidebar">
+        <div class="header">
+            <!-- Sidebar Header -->
+            <a href="../homepage/home.html">
+                <h2>Workflow Machine</h2>
+                <img src="../img/white_logo_transparent_background.png" alt="logo">
+            </a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu">
+            <ul>
+                <li><a href="./calendar.html">
+                    <span class="icon"><img src="../img/bxs_calendar.png" alt="calendar"></span>
+                    <span class="item">calendar</span>
+                    <span class="check"><img src="../img/languages/check.png" alt="currentpage"></span>
+                </a></li>
+
+                <li><a href="../notes/notes.html">
+                    <span class="icon"><img src="../img/charm_notes-tick.png" alt="notes"></span>
+                    <span class="item">notes</span>
+                </a></li>
+
+                <li><a href="../tasks/tasks.html">
+                    <span class="icon"><img src="../img/clarity_tasks-line.png" alt="todos"></span>
+                    <span class="item">tasks</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="../img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                    <span class="item">spreadsheet</span>
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="logoutbutton">
+            <button class="logout"><a href="../loginpage/login.html">Logout</a></button>
+        </div>
+    </div>
+
+    <div class="page">
+        <form action="POST">
+            <h1>Phone Call</h1>
+
+            <div class="apptbox">
+
+                <div id="phonename">
+
+                    <h3 class="name">name:</h3>
+
+                    <div class="inputfield">
+                        <input 
+                            type="text"
+                            class="phone"
+                            id="name"
+                        />
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div id="phonedate">
+
+                    <h3 class="date">date:</h3>
+                    
+                    <div class="dateentry">
+                        <!-- datepicker here -->
+
+                        <!-- Month -->
+                        <select name="month" id="month">
+                            <option disabled selected>Select Here</option>
+                            <option value="January">Jan 1 2023</option>
+                            <option value="January">Jan 2 2023</option>
+                            <option value="January">Jan 3 2023</option>
+                            <option value="January">Jan 4 2023</option>
+                            <option value="January">Jan 5 2023</option>
+                            <option value="January">Jan 6 2023</option>
+                            <option value="January">Jan 7 2023</option>
+                            <option value="January">Jan 8 2023</option>
+                            <option value="January">Jan 9 2023</option>
+                            <option value="January">Jan 10 2023</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div id="phonetimes">
+
+                    <h3 class="time">time:</h3>
+
+                    <!-- <input type="time" id="timeclock"> -->
+
+                    <div id="timebuttons">
+                        <button type="button" class="hour" value="2:00PM">2:00PM</button>
+                        <button class="hour" value="3:00PM">3:00PM</button>
+                        <button class="hour" value="4:00PM">4:00PM</button>
+                        <button class="hour" value="5:00PM">5:00PM</button>
+                        <button class="hour" value="6:00PM">6:00PM</button>
+                        <button class="hour" value="7:00PM">7:00PM</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="phonenumber">
+
+                    <h3 class="number">phone:</h3>
+                    <div class="inputfield">
+                        <input 
+                            type="tel"
+                            class="phone"
+                            id="phone"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- <div id="phonetimes">
+
+                    <h3 class="time">time:</h3> -->
+
+                    <!-- <input type="time" id="timeclock"> -->
+
+                    <!-- <div id="timebuttons">
+                        <button type="button" class="hour" value="2:00PM">2:00PM</button>
+                        <button class="hour" value="3:00PM">3:00PM</button>
+                        <button class="hour" value="4:00PM">4:00PM</button>
+                        <button class="hour" value="5:00PM">5:00PM</button>
+                        <button class="hour" value="6:00PM">6:00PM</button>
+                        <button class="hour" value="7:00PM">7:00PM</button>
+                    </div> -->
+                <!-- </div> -->
+
+                <!-- <hr> -->
+
+                <div id="phonetopic">
+
+                    <h3 class="topic">topic:</h3>
+                    
+                    <div class="inputfield">
+                        <input 
+                            type="text"
+                            class="topic"
+                            id="name"
+                        />
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="buttondiv">
+                    <p class="back"><a href="./calendar.html">Back to Calendar</a></p>
+                    <button class="submit" type="submit">Submit</button>
+                    <p class="callslist"><a href="#">Go to Phone Calls List</a></p>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
+    
+</body>
+</html>

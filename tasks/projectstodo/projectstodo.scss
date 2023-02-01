@@ -1,0 +1,271 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+$placeholder: #6B7280;
+$thegreen: #3C908B;
+$alertblue: #3292FA;
+$editwhite: #E1F5F3;
+$otherbackground: #E2F1FF;
+$cream: #FFF7D6;
+
+// ACTION BUTTON COLORS
+$editbuttongreen: #11B386;
+$crossbuttoncream:#FFF7D6;
+$deletebuttonblue:#3292FA;
+$background: #F3F9FF;
+
+
+// WHOLE PAGE
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: $background;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .sidebar {
+        background-color: $darkblue;
+        width: 280px;
+        height: 100vh;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease;
+        // HEADER OF SIDEBAR
+        .header {
+            text-align: center;
+            margin: 20px;
+            h2 {
+                color: white;
+                padding-bottom: 30px;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        // MENU PART OF SIDEBAR
+        .menu {
+            padding-top: 90px;
+            padding-left: 40px;
+            ul {
+                li {
+                    a {
+                        padding-left: 10px;
+                        font-size: 25px;
+                        color: white;
+                        text-decoration: none;
+                        line-height: 70px;
+                        .icon {
+                            img {
+                                top: 5px;
+                                width: 25px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    .check {
+                        height: 20px;
+                        img {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .logoutbutton {
+            padding-top: 200px;
+            height: 20px;
+            text-align: center;
+            .logout {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: white;
+                border: none;
+                font-weight: bold;
+                a {
+                    color: $darkblue;
+                }
+            }
+        }
+    }
+    
+    // THE INPUT FORM AT TOP OF THE PAGE
+    .wrapper {
+        .header {
+            padding: 2rem 1rem;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            h1 {
+                font-size: 2.5rem;
+                color: $darkblue;
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+            #project-fill-form {
+                display: flex;
+            }
+            #new-project-input {
+                flex: 1 1 0%;
+                background-color: $darkblue;
+                color: white;
+                padding: 1rem;
+                margin-right: 1rem;
+                font-size: 1.25rem;
+                border: none;
+                outline: none;
+            }
+            #new-project-input::placeholder {
+                color: $placeholder;
+            }
+            #new-project-input:active {
+                color: white;
+                background-color: $darkblue;
+            }
+            #new-project-submit {
+                font-size: 1.25rem;
+                font-weight: 700;
+                cursor: pointer;
+                color: $darkblue;
+                border: $darkblue 2px solid;
+                background: none;
+                text-align: center;
+                width: 175px;
+            }
+            #new-project-submit:active {
+                border-radius: 10px;
+            }
+        }
+
+        // THE TO DO LIST PART
+        main {
+            // background-color: aqua;
+            flex: 1 1 0%;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            #project-list {
+                padding: 1rem;
+                    // Put the outline here
+                    .outline {
+                        border: 2px solid $darkblue;
+                        height: 655px;
+                        padding: 40px;
+                    // NOW time for the block for the items of projects
+                    #project_block {
+                        padding: 30px;
+                        overflow-y: scroll;
+                        height: 550px;
+                        // NOW time for the individual items
+                        .project_items {
+                            // background and slicing for each item
+                            background-color: $darkblue;
+                            padding: 1rem;
+                            margin-bottom: 1rem;
+                            transition: all .3s ease-in;
+                            // NOW set the content
+                            #content {
+                                // display flex and space-between for the items
+                                    // on each project item (i.e. input and buttons)
+                                display: flex;
+                                justify-content: space-between;
+                                input {
+                                    background-color: $darkblue;
+                                    // background-color: green;
+                                    border: none;
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 1.2rem;
+                                    
+                                }
+                                // pops up when it is NOT read-only (for edit)
+                                input:not(:read-only){
+                                    color: $editbuttongreen;
+                                    transition: all .4s ease-in;
+                                    appearance: none;
+                                    border: none;
+                                    outline: none;
+                                }
+                            }
+                            // NOW the ACTION buttons
+                            .buttons {
+                                display: flex;
+                                margin: 0 -0.5rem;
+                                button {
+                                    cursor: pointer;
+                                    margin: 0 0.5rem;
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                    transition: 0.4s;
+                                }
+                                .edit {
+                                    background-color: $darkblue;
+                                    color: $editbuttongreen;
+                                    border: none;
+                                    font-size: 15px;
+                                }
+                                .delete {
+                                    background-color: $darkblue;
+                                    color: $deletebuttonblue;
+                                    border: none;
+                                    font-size: 15px; 
+                                }
+                                .cross {
+                                    background-color: $darkblue;
+                                    color: white;
+                                    border: none;
+                                    font-size: 15px;
+                                }
+                            } 
+                        }
+                    }
+                    // SCROLLBAR STYLING
+                    #project_block::-webkit-scrollbar {
+                        border: 1px solid $darkblue;
+                        border-radius: 10px;
+                    }
+                    #project_block::-webkit-scrollbar-thumb {
+                        background: $darkblue;
+                        border-radius: 10px;
+                    }
+                    // Back to Tasks Menu Button
+                    .back {
+                        // background-color: greenyellow;
+                        display: flex;
+                        justify-content: right;
+                        padding: 20px 50px 0px 0px;
+                        #arrow {
+                            // background-color: wheat;
+                            img {
+                                width: 20px;
+                                height: 20px;
+                                
+                            }
+                        }
+                        a {
+                            color: $darkblue;
+                            font-weight: bold;
+                            font-size: 1.1rem;
+                            padding-left: 5px;
+                        }
+
+                    }
+                }    
+            }
+
+        }
+    }
+}

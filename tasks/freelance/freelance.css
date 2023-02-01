@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+* body {
+  background-color: #F3F9FF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+* body .sidebar {
+  background-color: #243F67;
+  width: 280px;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+* body .sidebar .header {
+  text-align: center;
+  margin: 20px;
+}
+* body .sidebar .header h2 {
+  color: white;
+  padding-bottom: 30px;
+}
+* body .sidebar .header img {
+  width: 120px;
+  height: 120px;
+}
+* body .sidebar .menu {
+  padding-top: 90px;
+  padding-left: 40px;
+}
+* body .sidebar .menu ul li a {
+  padding-left: 10px;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  line-height: 70px;
+}
+* body .sidebar .menu ul li a .icon img {
+  top: 5px;
+  width: 25px;
+  display: inline-block;
+}
+* body .sidebar .menu ul li .check {
+  height: 20px;
+}
+* body .sidebar .menu ul li .check img {
+  width: 25px;
+}
+* body .sidebar .logoutbutton {
+  padding-top: 200px;
+  height: 20px;
+  text-align: center;
+}
+* body .sidebar .logoutbutton .logout {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+* body .sidebar .logoutbutton .logout a {
+  color: #243F67;
+}
+* body .wrapper .header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+* body .wrapper .header h1 {
+  font-size: 2.5rem;
+  color: #243F67;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+* body .wrapper .header #freelance-fill-form {
+  display: flex;
+}
+* body .wrapper .header #new-freelance-input {
+  flex: 1 1 0%;
+  background-color: #243F67;
+  color: white;
+  padding: 1rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+}
+* body .wrapper .header #new-freelance-input::-moz-placeholder {
+  color: #6B7280;
+}
+* body .wrapper .header #new-freelance-input:-ms-input-placeholder {
+  color: #6B7280;
+}
+* body .wrapper .header #new-freelance-input::placeholder {
+  color: #6B7280;
+}
+* body .wrapper .header #new-freelance-input:active {
+  color: white;
+  background-color: #243F67;
+}
+* body .wrapper .header #new-freelance-submit {
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #243F67;
+  border: #243F67 2px solid;
+  background: none;
+  padding: 5px;
+}
+* body .wrapper .header #new-freelance-submit:hover {
+  background-color: gainsboro;
+  color: #243F67;
+  transition: all 0.3s ease-in;
+}
+* body .wrapper .header #new-freelance-submit:active {
+  opacity: 0.6;
+  color: #00C6BC;
+  transition: all 0.1s ease-in;
+  border-radius: 10px;
+}
+* body .wrapper main {
+  flex: 1 1 0%;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+* body .wrapper main .freelance-list {
+  padding: 1rem;
+}
+* body .wrapper main .freelance-list #freelance_block {
+  border: 2px solid #243F67;
+  padding: 30px;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items {
+  display: flex;
+  justify-content: space-between;
+  background-color: #243F67;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #content .text {
+  font-weight: 600;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #content .crossed {
+  text-decoration: line-through;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #content .uncrossed {
+  text-decoration: none;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #content input {
+  background-color: #243F67;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 100%;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #content input:not(:-moz-read-only) {
+  color: #11B386;
+  -moz-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  outline: none;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #content input:not(:read-only) {
+  color: #11B386;
+  transition: all 0.4s ease-in;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #buttons {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #buttons button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #buttons .edit {
+  background-color: #243F67;
+  color: #11B386;
+  border: none;
+  font-size: 15px;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #buttons .delete {
+  color: #3292FA;
+  background-color: #243F67;
+  border: none;
+  font-size: 15px;
+}
+* body .wrapper main .freelance-list #freelance_block .freelance_items #buttons .cross {
+  color: white;
+  background-color: #243F67;
+  border: none;
+  font-size: 15px;
+}/*# sourceMappingURL=freelance.css.map */

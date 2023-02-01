@@ -1,0 +1,304 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+
+
+// WHOLE PAGE
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: #F3F9FF;
+    }
+    .sidebar {
+        background-color: $darkblue;
+        width: 280px;
+        height: 100vh;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease-in;
+        .header {
+            text-align: center;
+            margin: 20px;
+            h2 {
+                color: white;
+                padding-bottom: 30px;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .menu {
+            padding-top: 90px;
+            padding-left: 40px;
+            ul {
+                li {
+                    a {
+                        padding-left: 10px;
+                        font-size: 25px;
+                        text-decoration: none;
+                        color: white;
+                        line-height: 70px;
+                        .icon {
+                            img {
+                                top: 5px;
+                                width: 25px;
+                                display: inline-block;
+                            }
+                        }
+                        .check {
+                            // background-color: red;
+                            height: 20px;
+                            img {
+                                width: 25px;
+                                // height: 35px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .logoutbutton {
+            padding-top: 200px;
+            height: 20px;
+            text-align: center;
+            .logout {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: white;
+                border: none;
+                font-weight: bold;
+                a {
+                    color: $darkblue;
+                }
+            }
+        }
+    }
+
+
+    // SQUARES OF NOTES
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 150px;
+        .title {
+            padding-top: 30px;
+            h1 {
+                font-size: 6vh;
+                color: $darkblue;
+            }
+        }
+        .page {
+            display: flex;
+            position: absolute;
+            height: 100vh;
+            padding-top: 50px;
+            .title {
+                padding-left: 500px;
+                font-size: 4vh;
+                width: 100%;
+                color: $darkblue;
+                // background-color: red;
+            }
+            .squares {
+                display: flex;
+                justify-content: center;
+                align-items: left;
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+                // background-color: green;
+                .html {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 10px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .css {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 10px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .tailwind {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 25px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .sass {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 10px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+            .squares2 {
+                display: flex;
+                justify-content: center;
+                align-items: left;
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+                // background-color: yellow;
+                .react {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 5px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .express {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 20px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .git {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 10px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    } 
+                }
+                .github {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 10px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    } 
+                }
+            }
+            .squares3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 20px;
+                gap: 20px;
+                // background-color: red;
+                .js {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 10px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .python {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 10px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+                .flask {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px $darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 3px 2px 1px grey;
+                    padding: 10px 10px;
+                    img {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 70px;
+                    }
+                }
+                .django {
+                    width: 300px;
+                    height: 100px;
+                    // border: 1px darkblue solid;
+                    // border-radius: 5px;
+                    box-shadow: 1px 1px 2px 1px grey;
+                    padding: 10px;
+                    img {
+                        padding-top: 10px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        height: 70px;
+                    }
+                }
+            }
+        }
+    }
+}

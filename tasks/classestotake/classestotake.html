@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="classestotake.css">
+    <title>Classes to Take</title>
+
+
+</head>
+
+
+<body>
+
+<!-- Sidebar -->
+ <div class="sidebar">
+    <div class="header">
+        <!-- Sidebar Header -->
+        <a href="/homepage/home.html">
+            <h2>Workflow Machine</h2>
+            <img src="/img/white_logo_transparent_background.png" alt="logo">
+        </a>
+    </div>
+    <!-- Menu Items -->
+    <div class="menu">
+        <ul>
+            <li><a href="/calendar/calendar.html">
+                <span class="icon"><img src="/img/bxs_calendar.png" alt="calendar"></span>
+                <span class="item">calendar</span>
+            </a></li>
+
+            <li><a href="/notes/notes.html">
+                <span class="icon"><img src="/img/charm_notes-tick.png" alt="notes"></span>
+                <span class="item">notes</span>
+            </a></li>
+
+            <li><a href="/tasks/tasks.html">
+                <span class="icon"><img src="/img/clarity_tasks-line.png" alt="todos"></span>
+                <span class="item">tasks</span>
+                <span class="check"><img src="/img/languages/check.png" alt="currentpage"></span> 
+
+            </a></li>
+
+            <li><a href="#">
+                <span class="icon"><img src="/img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                <span class="item">spreadsheet</span>
+            </a></li>
+        </ul>
+    </div>
+    <!-- Logout Button -->
+    <div class="logoutbutton">
+        <button class="logout"><a href="../loginpage/login.html">Logout</a></button>
+    </div>    
+</div>
+
+
+        <!-- TODO LIST -->
+
+    <div class="wrapper">
+
+        <header class="header">
+            <h1>Classes to take</h1>
+
+            <!-- Form Field in Header -->
+            <form id="classes-fill-form">
+
+                <!-- Input Field -->
+                <input 
+                    type="text"
+                    id="classes-input"
+                    placeholder="Enter class to Take....." />
+
+                <!-- Submit Button -->
+                <input 
+                    type="Submit"
+                    id="classes-submit" 
+                    value="Add Class"/>
+            </form>
+        </header>
+
+        <main>
+            <!-- The List -->
+            <section class="classes-list">
+                
+                <div class="outline">
+
+                    <div id="classes_block">
+
+                            <!-- THIS IS CREATED IN THE DOM  -->
+                            <!-- CONTENT and BUTTONS go in here -->
+
+                            <!-- THIS IS WHATS CREATED EVERY TIME A TODO IS ENTERED -->
+                            <!-- THESE EXIST IN AND OF ITSELF -->
+
+                            <!-- <div id="classes_items"> -->
+                                <!-- CONTENT PART -->
+                                <!-- <div id="content">
+                                    <input type="text"
+                                        class="text"
+                                        id="classtotake"
+                                        value="${Todo Item}"
+                                        readonly/>
+                                </div> -->
+                                <!-- BUTTONS PART -->
+                                <!-- <div id="buttons">
+                                    <button class="edit">edit</button>
+                                    <button class="delete">delete</button>
+                                    <button class="cross">cross-off</button>
+                                </div> -->
+                            <!-- </div> -->
+                    </div>
+
+                    <!-- Go Back Button -->
+                    <div class="back">
+                        <div id="arrow">
+                            <img src="/img/go-back-arrow.png" alt="go-back-arrow">
+                        </div>
+                        <span><a href="/tasks/tasks.html">Back to Tasks Menu</a></span>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </main>
+
+
+        <!-- JS SOURCED -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+        <script src="classestotake.js"></script>
+
+    </div>
+</body>
+</html>

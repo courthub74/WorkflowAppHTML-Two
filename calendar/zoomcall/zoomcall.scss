@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+
+// TEXT FIELD COLOR
+$textfield: #4375C0;
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: $background;
+        .sidebar {
+            background-color: $darkblue;
+            width: 280px;
+            height: 100vh;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease-in;
+            .header {
+                text-align: center;
+                margin: 20px;
+                h2 {
+                    color: white;
+                    padding-bottom: 30px;
+                }
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            .menu {
+                padding-top: 90px;
+                padding-left: 40px;
+                ul {
+                    li {
+                        a {
+                            padding-left: 10px;
+                            font-size: 25px;
+                            color: white;
+                            text-decoration: none;
+                            line-height: 70px;
+                            .icon {
+                                img {
+                                    top: 5px;
+                                    width: 25px;
+                                    display: inline-block;
+                                }
+                            }
+                            .check {
+                                // background-color: red;
+                                height: 20px;
+                                img {
+                                    width: 25px;
+                                    // height: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .logoutbutton {
+                padding-top: 200px;
+                height: 20px;
+                text-align: center;
+                .logout {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    a {
+                        color: $darkblue;
+                    }
+                }
+            }
+        }
+        // PAGE PART
+        .page {
+            // background-color: red;
+            height: 100vh;
+            width: 100%;
+            padding-top: 70px;
+            line-height: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                form {
+                    h1 {
+                        color: $textfield;
+                        font-size: 3.5rem;
+                        padding-bottom: 100px;
+                    }
+                    .apptbox {
+                        background-color: $textfield;
+                        width: 900px;
+                        height: 650px;
+                        border-radius: 5px;
+                        line-height: 40px;
+                        padding: 40px 20px;
+                        // For everyfield
+                        .zoomentry {
+                            // background-color: aqua;
+                            display: flex;
+                            padding-bottom: 10px;
+                            padding-top: 10px;
+                            padding-right: 21rem;
+                            // ALL the Titles
+                            .title {
+                                color: white;
+                                font-weight: bold;
+                                font-size: 2.5vh;
+                            }
+                            // ALL the inputs
+                            .inputfield {
+                                display: flex;
+                                input {
+                                    background-color: $textfield;
+                                    // background-color: aqua;
+                                    border: none;
+                                    width: 790px;
+                                    text-align: center;
+                                    margin: 0 auto;
+                                    font-size: 2.3vh;
+                                    padding-right: 70px;
+                                    color: white;
+                                     // the NAME section
+                                }
+                                input:focus {
+                                    background-color: transparent;
+                                    appearance: none;
+                                    border: none;
+                                    outline: none;
+                                }
+                                input:-webkit-autofill,
+                                input:-webkit-autofill:hover,
+                                input:-webkit-autofill:focus {
+                                    border: none;
+                                    -webkit-text-fill-color: white;
+                                    -webkit-box-shadow: 0 0 10px 1000px $textfield inset;
+                                    transition: background-color 5000s ease-in-out 2s;
+                                    font-size: 2.3vh;
+                                }
+                                input:-webkit-autofill::first-line {
+                                    font-size: 2.3vh;
+                                }
+                            }
+                            // the DATE section
+                            .zoomdate {
+                                padding-top: 5px;
+                                padding-left: 300px; 
+                                select {
+                                    cursor: pointer;
+                                    appearance: none;
+                                }
+                                select:focus{
+                                    outline: none;
+                                }
+                                #date {
+                                    border: none;
+                                    font-size: 1.5rem;
+                                    font-weight: bold;
+                                    background-color: $textfield;
+                                    // background-color: lightgreen;
+                                    color: white;
+                                    text-align: center;
+                                }
+                            }
+                            // the TIME section
+                            #timebuttons {
+                                // background-color: lightgreen;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 10px;
+                                padding: 10px 10px 5px 90px;
+                                .input-container {
+                                    position: relative;
+                                    width: 90px;
+                                    height: 30px;
+                                    border-radius: 5px;
+                                    border: none;
+                                    cursor: pointer;
+                                    background-color: white;
+                                    color: $textfield;
+                                    input {
+                                        position: absolute;
+                                        height: 100%;
+                                        width: 100%;
+                                        margin: 0;
+                                        cursor: pointer;
+                                        z-index: 2;
+                                        opacity: 0;
+                                    }
+                                    input[type="radio"]{
+                                        display: inline-block;
+                                        position: absolute;
+                                        left: 10px;
+                                        opacity: 0;
+                                        color: $textfield;
+                                    }
+                                    .radio-tile {
+                                        // background-color: green;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 100%;
+                                        transition: all 300s ease;
+                                        label {
+                                            color: $textfield;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        hr {
+                            height: 2px;
+                            background-color: white;
+                            border: none;
+                        }
+                        // the BUTTONS section
+                        .buttondiv {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 12px;
+                            padding: 90px 0px 0px 20px;
+                            // background-color: aqua;
+                            .calendar {
+                                // background-color: aqua;
+                                text-align: center;
+                                padding: 80px 160px 0px 0px;
+                                // width: 600px;
+                                .back {
+                                    a {
+                                        color: white;
+                                        font-size: 2.1vh;
+                                    }
+                                }
+                            }
+                            .subbutton {
+                                // background-color: aqua;
+                                padding-left: 12px;
+                                button {
+                                    border: none;
+                                    border-radius: 50%;
+                                    width: 120px;
+                                    height: 120px;
+                                    color: $textfield;
+                                    background-color: white;
+                                    font-weight: bold;
+                                    font-size: 1.3rem;
+                                    cursor: pointer;
+                                }
+                            }
+                            .list {
+                                // background-color: aqua;
+                                text-align: center;
+                                padding: 80px 10px 0px 145px;
+                                .zoomslist {
+                                    a {
+                                        color: white;
+                                        font-size: 2.1vh;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    } 
+}

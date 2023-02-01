@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+* body {
+  background-color: #F3F9FF;
+}
+* .sidebar {
+  background-color: #243F67;
+  width: 280px;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+}
+* .sidebar .header {
+  text-align: center;
+  margin: 20px;
+}
+* .sidebar .header h2 {
+  color: white;
+  padding-bottom: 30px;
+}
+* .sidebar .header img {
+  width: 120px;
+  height: 120px;
+}
+* .sidebar .menu {
+  padding-top: 90px;
+  padding-left: 40px;
+}
+* .sidebar .menu ul li a {
+  padding-left: 10px;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  line-height: 70px;
+}
+* .sidebar .menu ul li a .icon img {
+  top: 5px;
+  width: 25px;
+  display: inline-block;
+}
+* .sidebar .menu ul li .check {
+  height: 20px;
+}
+* .sidebar .menu ul li .check img {
+  width: 25px;
+}
+* .sidebar .logoutbutton {
+  padding-top: 200px;
+  height: 20px;
+  text-align: center;
+}
+* .sidebar .logoutbutton .logout {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+* .sidebar .logoutbutton .logout a {
+  color: #243F67;
+}
+* .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 250px;
+  padding-top: 100px;
+  height: 100vh;
+}
+* .wrapper .header {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #243F67;
+  padding: 40px;
+  width: 80%;
+  height: 90px;
+}
+* .wrapper .header p {
+  font-size: 4vh;
+  padding-right: 100px;
+}
+* .wrapper .header .inputblock {
+  width: 100%;
+}
+* .wrapper .header .inputblock input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 50%;
+  height: 30%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  height: 40px;
+}
+* .wrapper .header .inputblock .addProj {
+  background-color: gainsboro;
+  height: 40px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+* .wrapper .header .inputblock .addProj p {
+  font-size: 15px;
+  padding-left: 60px;
+  padding-top: 10px;
+  color: #243F67;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+* .wrapper .thelist {
+  border: 1px solid #243F67;
+  width: 80%;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+* .wrapper .thelist #projlist li {
+  padding: 20px;
+  font-size: 20px;
+}/*# sourceMappingURL=projects.css.map */

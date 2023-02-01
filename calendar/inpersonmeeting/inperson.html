@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Person Call</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="inperson.css">
+</head>
+<body>
+
+    <!-- WRAPPER -->
+    <div class="wrapper">
+     <!-- SIDEBAR -->
+
+     <div class="sidebar">
+        <div class="header">
+            <!-- Sidebar Header -->
+            <a href="/homepage/home.html">
+                <h2>Workflow Machine</h2>
+                <img src="/img/white_logo_transparent_background.png" alt="logo">
+            </a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu">
+            <ul>
+                <li><a href="/calendar/calendar.html">
+                    <span class="icon"><img src="/img/bxs_calendar.png" alt="calendar"></span>
+                    <span class="item">calendar</span>
+                    <span class="check"><img src="/img/languages/check.png" alt="currentpage"></span>
+                </a></li>
+
+                <li><a href="/notes/notes.html">
+                    <span class="icon"><img src="/img/charm_notes-tick.png" alt="notes"></span>
+                    <span class="item">notes</span>
+                </a></li>
+
+                <li><a href="/tasks/tasks.html">
+                    <span class="icon"><img src="/img/clarity_tasks-line.png" alt="todos"></span>
+                    <span class="item">tasks</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="/img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                    <span class="item">spreadsheet</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><img src="/img/contracts.png" alt="calendar"></span>
+                    <span class="item">contracts</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="/img/coins.png" id="coins" alt="calendar"></span>
+                    <span class="item">payments</span>
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="logoutbutton">
+            <button class="logout"><a href="../loginpage/login.html">Logout</a></button>
+        </div>
+    </div>
+
+    <!-- PAGE PART -->
+    <div class="page">
+
+        <form id="personform" action="POST">
+            <h1>Meetings in person</h1>
+
+            <!-- The Blue Zoom Box -->
+            <div class="apptbox">
+                <!-- The Name Line -->
+                <div class="personentry">
+                    <h3 class="title">location:</h3>
+                    <div id="location" class="inputfield">
+                        <input 
+                            type="text"
+                            class="personlocation"
+                            id="personlocation"/>
+                    </div>
+                </div>
+                <!-- UnderLine -->
+                <hr>
+
+                <!-- The Name Phone Line -->
+                <div class="personentry">
+                    <h3 id="name" class="title">name:</h3>
+                    <div class="inputfield">
+                        <input 
+                            type="text"
+                            class="personname"
+                            id="personname"/>
+                            
+                    </div>
+                </div>
+                <!-- UnderLine -->
+                <hr>
+
+                <!-- The Date Line -->
+                <div class="dateentry">
+                    <div id="datetitle">
+                        <h3 class="title">date:</h3>
+                    </div>
+                    <div class="persondate">
+                        <!-- datepicker here -->
+                        <!-- Month -->
+                        <select name="date" id="date">
+                            <option disabled selected>Select Here</option>
+                            <option value="Jan 1 2023">Jan 1 2023</option>
+                            <option value="Jan 2 2023">Jan 2 2023</option>
+                            <option value="Jan 2 2023">Jan 3 2023</option>
+                            <option value="Jan 4 2023">Jan 4 2023</option>
+                            <option value="Jan 5 2023">Jan 5 2023</option>
+                            <option value="Jan 6 2023">Jan 6 2023</option>
+                            <option value="Jan 7 2023">Jan 7 2023</option>
+                            <option value="Jan 8 2023">Jan 8 2023</option>
+                            <option value="Jan 9 2023">Jan 9 2023</option>
+                            <option value="Jan 10 2023">Jan 10 2023</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- UnderLine -->
+                <hr>
+                <!-- The Time Line -->
+                <div class="timeentry">
+                    <h3 id="time" class="title">time:</h3>
+                    <div id="timebuttons">
+                         <!-- 2 PM -->
+                         <div class="input-container" id="containertwo">
+                            <input type="radio" name="timebutt" id="two" class="hour" value="2:00PM"></input>
+                            <div class="radio-tile" id="tiletwo">
+                                <label for="2pm" id="labeltwo">2:00PM</label>
+                            </div>
+                        </div>
+                        
+                        <!-- 3 PM -->
+                        <div class="input-container" id="containerthree">
+                            <input type="radio" name="timebutt" id="three" class="hour" value="3:00PM"></input>
+                            <div class="radio-tile">
+                                <label for="3pm" id="labelthree">3:00PM</label>
+                            </div>
+                        </div>
+
+                        <!-- 4 PM -->
+                        <div class="input-container" id="containerfour">
+                            <input type="radio" name="timebutt" id="four" class="hour" value="4:00PM"></input>
+                            <div class="radio-tile">
+                                <label for="4pm" id="labelfour">4:00PM</label>
+                            </div>
+                        </div>
+                        
+                        <!-- 5 PM -->
+                        <div class="input-container" id="containerfive">
+                            <input type="radio" name="timebutt" id="five" class="hour" value="5:00PM"></input>
+                            <div class="radio-tile">
+                                <label for="5pm" id="labelfive">5:00PM</label>
+                            </div>
+                        </div>
+                        
+                        <!-- 6 PM -->
+                        <div class="input-container" id="containersix">
+                            <input type="radio" name="timebutt" id="six" class="hour" value="6:00PM"></input>
+                            <div class="radio-tile">
+                                <label for="6pm" id="labelsix">6:00PM</label>
+                            </div>
+                        </div>
+
+                        <!-- 7 PM -->
+                        <div class="input-container" id="containerseven">
+                            <input type="radio" name="timebutt" id="seven" class="hour" value="7:00PM"></input>
+                            <div class="radio-tile">
+                                <label for="7pm" id="labelseven">7:00PM</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UnderLine -->
+                <hr>
+                <!-- The Phone Line -->
+                <div class="personentry">
+                    <h3 id="phone" class="title">phone:</h3>
+                    <div class="inputfield">
+                        <input 
+                            type="tel"
+                            class="personphone"
+                            id="personphone"/>
+                    </div>
+                </div>
+                <!-- UnderLine -->
+                <hr>
+                <!-- The Topic Line -->
+                <div class="personentry">
+                    <h3 id="topic" class="title">topic:</h3>
+                    <div class="inputfield">
+                        <input 
+                            type="text"
+                            class="persontopic"
+                            id="persontopic"/>
+                    </div>
+                </div>
+                <!-- UnderLine -->
+                <hr>
+                
+                <!-- Button and other selections -->
+                <div class="buttondiv">
+                    <div class="calendar">
+                        <!-- <p class="back">Back to:</p> -->
+                        <p class="back"><a href="/calendar/calendar.html">Back to Calendar</a></p>
+                        <!-- <p class="back"><a href="/calendar/appointments/appointments.html">Appointments</a></p> -->
+                    </div>
+                    <div class="subbutton">
+                        <button class="submit" id="submit" type="submit">Submit</button>
+                    </div>
+                    <div class="list">
+                        <p class="personslist"><a href="#">To in Person List</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- FIREBASE Connection -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+<!-- JS Connection -->
+<script src="inperson.js"></script>
+
+</body>
+</html>

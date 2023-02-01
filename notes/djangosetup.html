@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="djangosetup.css">
+    <title>Django - Setting it up</title>
+</head>
+<body>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="header">
+                <!-- Sidebar Header -->
+                <a href="../homepage/home.html">
+                    <h2>Workflow Machine</h2>
+                    <img src="../img/white_logo_transparent_background.png" alt="logo">
+                </a>
+            </div>
+            <!-- Menu Items -->
+            <div class="menu">
+                <ul>
+                    <li><a href="../calendar/calendar.html">
+                        <span class="icon"><img src="../img/bxs_calendar.png" alt="calendar"></span>
+                        <span class="item">calendar</span>
+                    </a></li>
+    
+                    <li><a href="../notes/notes.html">
+                        <span class="icon"><img src="../img/charm_notes-tick.png" alt="notes"></span>
+                        <span class="item">notes</span>
+                        <span class="check"><img src="../img/languages/check.png" alt="currentpage"></span> 
+                    </a></li>
+    
+                    <li><a href="../tasks/tasks.html">
+                        <span class="icon"><img src="../img/clarity_tasks-line.png" alt="todos"></span>
+                        <span class="item">tasks</span>
+                    </a></li>
+    
+                    <li><a href="#">
+                        <span class="icon"><img src="../img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                        <span class="item">spreadsheet</span>
+                    </a></li>
+                </ul>
+            </div>
+            <!-- Logout Button -->
+            <div class="logoutbutton">
+                <button class="logout"><a href="../loginpage/login.html">Logout</a></button>
+            </div>
+        </div>
+
+        <div class="forbackbuttontoside">
+        <!-- Django setup notes -->
+        <div class="setupbox">
+            <div class="logo">
+                <img src="../img/languages/django.png" alt="django">
+            </div>
+
+            <div class="line">
+                <hr>
+            </div>
+
+            <!-- Title -->
+            <div class="djangoheader">
+                <h2>Initial Setup and Installation</h2>
+            </div>
+
+            <!-- The Set up List -->
+            <div class="setuplist">
+                <ol>
+                    <li>mkdir (project)</li>
+                    <hr>
+                    <li>inside above folder, install virtualenv (virtualenv 'venv')</li>
+                    <hr>
+                    <li>turn on virtualenv (. venv/Scripts/activate)</li>
+                    <hr>
+                    <li>while in virtualenv, install django (pip install django)</li>
+                    <hr>
+                    <li>create a project (django-admin.py startproject 'project name')</li>
+                    <small>NOTE: if not working try without .py</small>
+                    <hr>
+                    <li>open text editor and attach the folder to it</li>
+                    <hr>
+                    <li>in your (project) folder runserver: python manage.py runserver</li>
+                    <hr>
+                    <li>then in same folder: python manage.py migrate (creates admin screen)</li>
+                    <hr>
+                    <li>then in same folder: python manage.py createsuperuser</li>
+                    <small>NOTE: if doesn't work use:
+                        winpty python manage.py createsuperuser</small>
+                    <hr>
+                    <li>set up user name and password</li>
+                    <hr>
+                    <div class="backbutton">
+                        <p><img src="/img/go-back-arrow.png" alt="go-back-arrow"><a href="./django.html">Go Back</a></p>
+                    </div>
+                </ol>
+            </div>
+
+            <!-- <div class="backbutton">
+                <p><a href="./django.html">Back</a></p>
+            </div> -->
+        </div>
+    </div>
+
+
+</body>
+</html>

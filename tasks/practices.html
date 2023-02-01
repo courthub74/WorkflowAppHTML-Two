@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="practices.css">
+    <title>Practices</title>
+</head>
+<body>
+
+<!-- Sidebar -->
+ <div class="sidebar">
+    <div class="header">
+        <!-- Sidebar Header -->
+        <a href="../homepage/home.html">
+            <h2>Workflow Machine</h2>
+            <img src="../img/white_logo_transparent_background.png" alt="logo">
+        </a>
+    </div>
+    <!-- Menu Items -->
+    <div class="menu">
+        <ul>
+            <li><a href="../calendar/calendar.html">
+                <span class="icon"><img src="../img/bxs_calendar.png" alt="calendar"></span>
+                <span class="item">calendar</span>
+            </a></li>
+
+            <li><a href="../notes/notes.html">
+                <span class="icon"><img src="../img/charm_notes-tick.png" alt="notes"></span>
+                <span class="item">notes</span>
+            </a></li>
+
+            <li><a href="../tasks/tasks.html">
+                <span class="icon"><img src="../img/clarity_tasks-line.png" alt="todos"></span>
+                <span class="item">tasks</span>
+                <span class="check"><img src="../img/languages/check.png" alt="currentpage"></span> 
+
+            </a></li>
+
+            <li><a href="#">
+                <span class="icon"><img src="../img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                <span class="item"><a href="#">spreadsheet</a></span>
+            </a></li>
+        </ul>
+    </div>
+    <!-- Logout Button -->
+    <div class="logoutbutton">
+        <button class="logout"><a href="../loginpage/login.html">Logout</a></button>
+    </div>    
+</div>
+
+ <!-- TODO LIST -->
+
+ <div class="wrapper">
+
+    <div class="header">
+        <p>Practices</p>
+        <div class="inputblock">
+            <input type="text" id="pracinput" placeholder="Add Projects here....">
+            <span onclick="newElement()" class="addPrac"><p>Add Project</p></span>
+        </div>
+    </div>
+
+    <div class="thelist">
+        <ul id="praclist">
+            <li class="items">First</li>
+            <hr>
+            <li class="items">Second</li>
+            <hr>
+            <li class="items">Third</li>
+            <hr>
+            <li class="checked">Fourth</li>
+            <hr>
+            <li class="items">Fifth</li>
+            <hr>
+            <li class="items">Sixth</li>
+            <hr>
+            <li class="items">Seven</li>
+        </ul>
+    </div>
+
+    <!-- TODO JS -->
+    <script>
+
+        // Create a "close" button and append it to each list item
+        var myNodelist = document.getElementsByTagName("items");
+        // console.log(myNodelist);
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+            // var span = document.createElement("span");
+            var span = document.createElement("li");
+            var txt = document.createTextNode("\u00D7");
+            span.className = "close";
+            span.appendChild(txt);
+            myNodelist[i].appendChild(span);
+        }
+
+        // Click on a close button to hide the current list item
+        var close = document.getElementByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+                var div = this.parentElement;
+                div.style.display = "none";
+            }
+        }
+
+        // Add a "checked" symbol when clicking on a list item
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+            if (ev.target.className === 'items') {
+                ev.target.className.toggle('checked');
+            }
+        }, false);
+
+        // Create a new list item when clicking on the "Add" button
+        function newElement() {
+            var items = document.createElement("li");
+            var inputValue = document.getElementById("pracinput").value;
+            var t = document.createTextNode(inputValue);
+            items.appendChild(t);
+            if (inputValue === '') {
+                alert("Please enter a practice");
+            } else {
+                document.getElementById("praclist").appendChild(items);
+            }
+            // NOW record what was input in the input field
+            document.getElementById("pracinput").value = "";
+
+            var items = document.createElement("li");
+            var txt = document.createTextNode("\u00D7");
+            items.className = "close";
+            items.appendChild(txt);
+            li.appendChild(items);
+
+            for (i = 0; i < close.length; i++) {
+                close[i].onclick = function() {
+                    var div = this.parentElement;
+                    div.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+
+</div>
+    
+</body>
+</html>

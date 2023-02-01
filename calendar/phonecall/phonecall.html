@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="10"> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="phonecall.css">
+    <title>Phone Call</title>
+</head>
+<body>
+
+     <!-- SIDEBAR -->
+
+     <div class="sidebar">
+        <div class="header">
+            <!-- Sidebar Header -->
+            <a href="/homepage/home.html">
+                <h2>Workflow Machine</h2>
+                <img src="/img/Courdevelops.svg" alt="logo">
+            </a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu">
+            <ul>
+                <li><a href="/calendar/calendar.html">
+                    <span class="icon"><img src="/img/bxs_calendar.png" alt="calendar"></span>
+                    <span class="item">calendar</span>
+                    <span class="check"><img src="/img/languages/check.png" alt="currentpage"></span>
+                </a></li>
+
+                <li><a href="/notes/notes.html">
+                    <span class="icon"><img src="/img/charm_notes-tick.png" alt="notes"></span>
+                    <span class="item">notes</span>
+                </a></li>
+
+                <li><a href="/tasks/tasks.html">
+                    <span class="icon"><img src="/img/clarity_tasks-line.png" alt="todos"></span>
+                    <span class="item">tasks</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="/img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                    <span class="item">spreadsheet</span>
+                </a></li>
+                
+                <li><a href="#">
+                    <span class="icon"><img src="/img/contracts.png" alt="calendar"></span>
+                    <span class="item">contracts</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="/img/coins.png" id="coins" alt="calendar"></span>
+                    <span class="item">payments</span>
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="logoutbutton">
+            <button class="logout"><a href="../loginpage/login.html">Logout</a></button>
+        </div>
+    </div>
+
+    <!-- PAGE PART -->
+    <div class="page">
+        <form id="phoneform" action="POST">
+            <h1>Phone Call</h1>
+
+            <!-- The Phone Call Box -->
+            <div class="apptbox">
+                <!-- The Name Line -->
+                <div class="phoneentry">
+                    <h3 class="title">name:</h3>
+                    <div class="inputfield">
+                        <input 
+                            type="text"
+                            class="phonename"
+                            id="name"
+                            required/>
+                    </div>
+                </div>
+                <!-- UnderLine -->
+                <hr>
+                <!-- The Date Line -->
+                <div class="phoneentry">
+                    <h3 class="title">date:</h3>
+                    <div class="phonedate">
+                        <!-- datepicker here -->
+                        <!-- Month -->
+                        <select name="date" id="date">
+                            <option disabled selected>Select Here</option>
+                            <option value="1/1/2023">Jan 1 2023</option>
+                            <option value="1/2/2023">Jan 2 2023</option>
+                            <option value="1/3/2023">Jan 3 2023</option>
+                            <option value="1/4/2023">Jan 4 2023</option>
+                            <option value="1/5/2023">Jan 5 2023</option>
+                            <option value="1/6/2023">Jan 6 2023</option>
+                            <option value="1/7/2023">Jan 7 2023</option>
+                            <option value="1/8/2023">Jan 8 2023</option>
+                            <option value="1/9/2023">Jan 9 2023</option>
+                            <option value="1/10/2023">Jan 10 2023</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- UnderLine -->
+                <hr>
+                <!-- The Time Line -->
+                <div class="phoneentry">
+                    <h3 class="title">time:</h3>
+                    <!-- Section of all the time buttons -->
+                    <div id="timebuttons">
+
+                        <!-- 2 PM -->
+                        <div class="input-container" id="containertwo">
+                            <input type="radio" name="timebutt" id="two" class="hour" value="2:00PM"></input>
+                            <div class="radio-tile" id="tiletwo">
+                                <label for="2pm" id="labeltwo">2:00PM</label>
+                            </div>
+                        </div>
+                        <!-- 3 PM -->
+                        <div class="input-container" id="containerthree">
+                            <input type="radio" name="timebutt" id="three" class="hour" value="3:00PM"></input>
+                            <div class="radio-tile">
+                                <label for="3pm" id="labelthree">3:00PM</label>
+                            </div>
+                        </div>
+
+                        <!-- 4 PM -->
+                        <div class="input-container" id="containerfour">
+                            <input type="radio" name="timebutt" id="four" class="hour" value="4:00PM"></input>
+                            <div class="radio-tile">
+                                <label for="4pm" id="labelfour">4:00PM</label>
+                            </div>
+                        </div>
+                        
+                        <!-- 5 PM -->
+                        <div class="input-container" id="containerfive">
+                            <input type="radio" name="timebutt" id="five" class="hour" value="5:00PM"></input>
+                            <div class="radio-tile">
+                                <label for="5pm" id="labelfive">5:00PM</label>
+                            </div>
+                        </div>
+                        
+                        <!-- 6 PM -->
+                        <div class="input-container" id="containersix">
+                            <input type="radio" name="timebutt" id="six" class="hour" value="6:00PM"></input>
+                            <div class="radio-tile">
+                                <label for="6pm" id="labelsix">6:00PM</label>
+                            </div>
+                        </div>
+
+                        <!-- 7 PM -->
+                        <div class="input-container" id="containerseven">
+                            <input type="radio" name="timebutt" id="seven" class="hour" value="7:00PM"></input>
+                            <div class="radio-tile">
+                                <label for="7pm" id="labelseven">7:00PM</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- UnderLine -->
+                <hr>
+                <!-- The Phone Line -->
+                <div class="phoneentry">
+                    <h3 class="title">phone:</h3>
+                    <div class="inputfield">
+                        <input 
+                            type="tel"
+                            class="phonephone"
+                            id="phone"
+                            required/>
+                    </div>
+                </div>
+                <!-- UnderLine -->
+                <hr>
+                <!-- The Topic Line -->
+                <div class="phoneentry">
+                    <h3 class="title">topic:</h3>
+                    <div class="inputfield">
+                        <input 
+                            type="text"
+                            class="phonetopic"
+                            id="topic"
+                        />
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="buttondiv">
+                    <div class="calendar">
+                    <!-- Back to Calendar Link-->
+                        <p class="back"><a href="/calendar/calendar.html">Back to Calendar</a></p>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="subbutton">
+                        <button class="submit" type="submit" id="submit">Submit</button>
+                    </div>
+                    <!-- Go to phone Call List Link -->
+                    <div class="list">
+                        <p class="callslist"><a href="/calendar/phonecall/phonecalllist.html">Go to Phone Calls List</a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+
+    <!-- FIREBASE Connection -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    
+    <!-- JS Link -->
+    <script src="phonecall.js"></script>
+</body>
+</html>
+    
+</body>
+</html>

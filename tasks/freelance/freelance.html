@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="freelance.css">
+    <title>Freelance</title>
+
+
+</head>
+
+
+<body>
+
+<!-- Sidebar -->
+ <div class="sidebar">
+    <div class="header">
+        <!-- Sidebar Header -->
+        <a href="/homepage/home.html">
+            <h2>Workflow Machine</h2>
+            <img src="/img/white_logo_transparent_background.png" alt="logo">
+        </a>
+    </div>
+    <!-- Menu Items -->
+    <div class="menu">
+        <ul>
+            <li><a href="/calendar/calendar.html">
+                <span class="icon"><img src="/img/bxs_calendar.png" alt="calendar"></span>
+                <span class="item">calendar</span>
+            </a></li>
+
+            <li><a href="/notes/notes.html">
+                <span class="icon"><img src="/img/charm_notes-tick.png" alt="notes"></span>
+                <span class="item">notes</span>
+            </a></li>
+
+            <li><a href="/tasks/tasks.html">
+                <span class="icon"><img src="/img/clarity_tasks-line.png" alt="todos"></span>
+                <span class="item">tasks</span>
+                <span class="check"><img src="/img/languages/check.png" alt="currentpage"></span> 
+
+            </a></li>
+
+            <li><a href="#">
+                <span class="icon"><img src="/img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                <span class="item"><a href="#">spreadsheet</a></span>
+            </a></li>
+        </ul>
+    </div>
+    <!-- Logout Button -->
+    <div class="logoutbutton">
+        <button class="logout"><a href="../loginpage/login.html">Logout</a></button>
+    </div>    
+</div>
+
+
+        <!-- TODO LIST -->
+
+    <div class="wrapper">
+
+        <header class="header">
+            <h1>Freelance Jobs to Complete</h1>
+
+            <!-- Form Field in Header -->
+            <form id="freelance-fill-form">
+
+                <!-- Input Field -->
+                <input 
+                    type="text"
+                    id="new-freelance-input"
+                    placeholder="Enter Freelance Job....." />
+
+                <!-- Submit Button -->
+                <input 
+                    type="Submit"
+                    id="new-freelance-submit" 
+                    value="Add Freelance Job"/>
+            </form>
+        </header>
+
+        <main>
+
+            <!-- The List -->
+            <section class="freelance-list">
+                <p>the list:</p>
+
+
+                <div id="freelance_block">
+                    <!-- THIS IS CREATED IN THE DOM  -->
+                    <!-- CONTENT and BUTTONS go in here -->
+
+                    <!-- THIS IS WHATS CREATED EVERY TIME A TODO IS ENTERED -->
+                    <!-- THESE EXIST IN AND OF ITSELF -->
+                    
+                <!-- <div class="freelance_items"> -->
+                        <!-- CONTENT PART -->
+                        <!-- <div id="content">
+                            <input type="text"
+                                class="text"
+                                id="input"
+                                value="${Todo Item}"
+                                readonly/>
+                        </div> -->
+                        <!-- BUTTONS PART -->
+                        <!-- <div id="buttons">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                            <button class="cross">Cross-Off</button>
+                        </div> -->
+                <!-- </div> -->
+
+            </section>
+        </main>
+
+
+        <!-- JS SOURCED -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+        <script src="freelance.js"></script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Calls List</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="phonecalllist.css">
+</head>
+<body>
+
+     <!-- SIDEBAR -->
+
+     <div class="sidebar">
+        <div class="header">
+            <!-- Sidebar Header -->
+            <a href="/homepage/home.html">
+                <h2>Workflow Machine</h2>
+                <img src="/img/white_logo_transparent_background.png" alt="logo">
+            </a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu">
+            <ul>
+                <li><a href="/calendar/calendar.html">
+                    <span class="icon"><img src="/img/bxs_calendar.png" alt="calendar"></span>
+                    <span class="item">calendar</span>
+                    <span class="check"><img src="/img/languages/check.png" alt="currentpage"></span>
+                </a></li>
+
+                <li><a href="/notes/notes.html">
+                    <span class="icon"><img src="/img/charm_notes-tick.png" alt="notes"></span>
+                    <span class="item">notes</span>
+                </a></li>
+
+                <li><a href="/tasks/tasks.html">
+                    <span class="icon"><img src="/img/clarity_tasks-line.png" alt="todos"></span>
+                    <span class="item">tasks</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="/img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                    <span class="item">spreadsheet</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="/img/contracts.png" alt="calendar"></span>
+                    <span class="item">contracts</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="/img/coins.png" id="coins" alt="calendar"></span>
+                    <span class="item">payments</span>
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="logoutbutton">
+            <button class="logout"><a href="../loginpage/login.html">Logout</a></button>
+        </div>
+    </div>
+    <!-- CENTER THIS -->
+    <div class="container">
+        <!-- PAGE PART -->
+        <div class="page">
+            <h1>Phone Calls List</h1>
+            <!-- Meetings in list div, place in a frame -->
+            <div class="outline">
+                <!-- <h3>Here is the outline</h3> -->
+                <div class="calls">
+                    <!-- Here is the phone calls -->
+                    <!-- THIS IS CREATED IN THE DOM  -->
+                    <!-- CONTENT and BUTTONS go in here -->
+
+                    <!-- EVERY TIME A PHONE CALL IS ENTERED -->
+                    <!-- THESE EXIST IN AND OF ITSELF -->
+                    </div>
+                <div class="settings">
+                    <div id="gear">
+                        <img src="/img/timesettings.png" alt="settings">
+                    </div>
+                    <span><a href="#">Appointment Settings</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- FIREBASE connection -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <!-- JS LINK -->
+    <script src="phonecalllist.js"></script>
+</body>
+</html>

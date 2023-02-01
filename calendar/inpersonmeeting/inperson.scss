@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: $background;
+        .wrapper {
+            // for both the sidebar and page form
+            display: flex;
+            .sidebar {
+                background-color: $darkblue;
+                width: 16vw;
+                height: 100vh;
+                padding: 2vw 0;
+                top: 0;
+                left: 0;
+                // transition: all 0.5s ease-in;
+                .header {
+                    text-align: center;
+                    h2 {
+                        color: white;
+                        padding: 1.5vw;
+                        font-size: 1.4vw;
+                    }
+                    img {
+                        width: 7vw;
+                        height: 7vw;
+                    }
+                }
+                .menu {
+                    padding: 2vw 0 0 1.6vw;
+                    text-align: left;
+                    ul {
+                        li {
+                            a {
+                                padding-left: 2vw;
+                                font-size: 1.3vw;
+                                color: white;
+                                text-decoration: none;
+                                .icon {
+                                    img {
+                                        margin-top: 2vw;
+                                        width: 1.4vw;
+                                    }
+                                }
+                                .check {
+                                    img {
+                                        width: 3vh;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .logoutbutton {
+                    padding: 5vw 0 0 0;
+                    height: 2vw;
+                    text-align: center;
+                    .logout {
+                        width: 4vw;
+                        height: 4vw;
+                        border-radius: 50%;
+                        background-color: white;
+                        border: none;
+                        a {
+                            color: $darkblue;
+                            font-size: .8vw;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            // NOW Page part
+            .page {
+                height: 100vh;
+                width: 70vw;
+                padding: 5vw 15vw 15vw 15vw;
+                // The form to be filled
+                #personform {
+                    h1 {
+                        color: $darkblue;
+                        font-size: 2vw;
+                        padding: 0 0 2vw 0;
+                    }
+                    .apptbox {
+                        background-color: $darkblue;
+                        padding: 3vw;
+                        border-radius: 5px;
+                        width: 50vw;
+                        .personentry {
+                            // each line that needs to be type entered
+                            // display: flex;
+                            // padding: 0 1vw 1vw 0;
+                            // background-color: yellow;
+                            .title {
+                                // ALL the titles
+                                color: white;
+                                font-size: 1.2vw;
+                            }
+                            #name, #datetitle, #time, #phone, #topic {
+                                margin-top: 1vw;
+                            }
+                            .inputfield {
+                                width: 100%;
+                                // height: 5vh;
+                                // background-color: aqua;
+                                // margin: 0 3vw 0 3vw;
+                                // padding: .01vw;
+                                input {
+                                    border: none;
+                                    text-align: center;
+                                    width: 100%;
+                                    height: 3vh;
+                                    font-size: 1.2vw;
+                                    // margin: .3rem 0 0 0;
+                                    // padding: 2vw;
+                                    background-color: $darkblue;
+                                    color: white;
+                                    padding-bottom: 1vh;
+                                }
+                                input:focus {
+                                    background-color: transparent;
+                                    appearance: none;
+                                    border: none;
+                                    outline: none;
+                                }
+                                input:-webkit-autofill,
+                                input:-webkit-autofill:hover,
+                                input:-webkit-autofill:focus {
+                                    border: none;
+                                    -webkit-text-fill-color: white;
+                                    -webkit-box-shadow: 0 0 10vw 1000vw $darkblue inset;
+                                    transition: background-color 5000s ease-in-out 2s;
+                                    font-size: 2.5vw;
+                                }
+                                input:-webkit-autofill::first-line {
+                                    font-size: 1.2vw;
+                                }
+                            }
+                        }
+                        // DATE Section
+                        .dateentry {
+                            display: flex;
+                            padding: 1vw 0 0 0;
+                            .title {
+                                // ALL the titles
+                                color: white;
+                                font-size: 1.2vw;
+                                margin-bottom: 1vw;
+                            }
+                            .persondate {
+                                width: 100%;
+                                // background-color: yellow;
+                                margin-right: 3vw;
+                                margin-top: 1vh;
+                                text-align: center;
+                                select {
+                                    cursor: pointer;
+                                    appearance: none;
+                                }
+                                select:focus {
+                                    outline: none;
+                                }
+                                #date {
+                                    border: none;
+                                    font-size: 1vw;
+                                    background-color: $darkblue;
+                                    text-align: center;
+                                    color: white;
+                                    padding-bottom: .8vw;
+                                    // padding-left: 1vw;
+                                }
+                            }
+                        }
+                        // TIME Section
+                        .timeentry {
+                            display: flex;
+                            padding: 1vw 0 0 0;
+                            // background-color: wheat;
+                            .title {
+                                // ALL the titles
+                                color: white;
+                                font-size: 1.2vw;
+                                margin-bottom: 1.3vw;
+                            }
+                             #timebuttons {
+                                display: flex;
+                                justify-content: center;
+                                padding: 0 0 0 4.6vw;
+                                margin-top: .3vh;
+                                gap: .8vw;
+                                // background-color: aquamarine;
+                                .input-container {
+                                    background-color: white;
+                                    color: $darkblue;
+                                    width: 4.4vw;
+                                    height: 1.7vw;
+                                    border-radius: 5px;
+                                    border: none;
+                                    position: relative;
+                                    input {
+                                        cursor: pointer;
+                                        position: absolute;
+                                        width: 5vw;
+                                        height: 2vw;
+                                        margin: 0;
+                                        z-index: 2;
+                                        opacity: 0;
+                                    }
+                                    .radio-tile {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        height: 100%;
+                                        transition: all 300s ease;
+                                        label {
+                                            color:$darkblue;
+                                            font-size: .8vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        // the BUTTONS section
+                        .buttondiv {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 2vw 2vw 0 2vw;
+                            gap: 8vw;
+                            // background-color: aqua;
+                            .calendar {
+                                .back {
+                                    // background-color: lightseagreen;
+                                    a {
+                                        color: white;
+                                        font-size: 1vw;
+                                    }
+                                }
+                            }
+                            .subbutton {
+                                // background-color: royalblue;
+                                margin: 0 2vw 0 0;
+                                button {
+                                    border: none;
+                                    border-radius: 50%;
+                                    width: 5vw;
+                                    height: 5vw;
+                                    font-weight: bold;
+                                    font-size: 1vw;
+                                    color: $darkblue;
+                                }
+                            }
+                            .list {
+                                .personslist {
+                                    // background-color: yellowgreen;
+                                    a {
+                                        color: white;
+                                        font-size: 1vw;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// TABLET SETTINGS
+@media screen and (max-width: 768px) {
+    // Set the IPad screen settings
+    // basic color bkgrd test
+    * {
+        // background-color: red;
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        body {
+            background-color: $background;
+            .wrapper {
+                // THIS will be a display column
+                display: flex;
+                flex-direction: column;
+                .sidebar {
+                    display: flex;
+                    justify-content: left;
+                    padding: 2vw 0 3vw 4vw;
+                    background-color: $darkblue;
+                    height: 10vh;
+                    width: 100vw;
+                    top: 0;
+                    // transition: all 0.5s ease-in;
+                    .header {
+                        h2 {
+                            display: none;
+                        }
+                        img {
+                            width: 10vw;
+                            height: 10vw;
+                        }
+                    }
+                    .menu {
+                    display: none;
+                    }
+                    .logoutbutton {
+                        display: none;
+                    }
+                }
+                .page {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // height: 100vh;
+                    width: 100vw;
+                    #personform {
+                        h1 {
+                            color: $darkblue;
+                            font-size: 5vw;
+                        }
+                        .apptbox {
+                            width: 80vw;
+                            height: 100vw;
+                            padding: 8vw;
+                            .personentry {
+                                .title {
+                                    font-size: 2.5vw;
+                                }
+                                #name, #datetitle, #time, #phone, #topic {
+                                margin-top: 5vw;
+                                }
+                                .inputfield {
+                                    // width: 100%;
+                                    input {
+                                        // background-color: aqua;
+                                        height: 3vh;
+                                        font-size: 3vw;
+                                    }
+                                }
+                            }
+                            // DATE Section
+                            .dateentry {
+                                display: flex;
+                                padding: 4vw 0 2vw 0;
+                                // background-color: aqua;
+                                .title {
+                                    font-size: 2.5vw;
+                                }
+                                .persondate {
+                                    select {
+                                        cursor: pointer;
+                                        appearance: none;
+                                    }
+                                    select:focus {
+                                        outline: none;
+                                    }
+                                    #date {
+                                       font-size: 3vw; 
+                                       padding: 0 3.9vw 1vw 0;
+                                    }
+                                }
+                            }
+                            // TIME Section
+                            .timeentry {
+                                padding: 4vw 0 2vw 0;
+                                // background-color: aqua;
+                                .title {
+                                    font-size: 2.5vw;
+                                }
+                                #timebuttons {
+                                    padding: 0 0 0 3vw;
+                                    .input-container {
+                                        width: 8vw;
+                                        height: 2.5vw;
+                                    }
+                                }
+                            }
+                            // the BUTTONS section
+                            .buttondiv {
+                                padding: 12vw 0 0 0;
+                                // background-color: yellowgreen;
+                                .calendar {
+                                    .back {
+                                        // background-color: lightseagreen;
+                                        a {
+                                            color: white;
+                                            font-size: 2vw;
+                                        }
+                                    }
+                                }
+                                .subbutton {
+                                    button {
+                                        width: 8vw;
+                                        height: 8vw;
+                                        font-size: 1.5vw;
+                                    }
+                                }
+                                    .list {
+                                    .personslist {
+                                        // background-color: yellowgreen;
+                                        a {
+                                            color: white;
+                                            font-size: 2vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+// SMARTPHONE SETTINGS
+@media screen and (max-width: 500px) {
+    // Set the IPhone screen settings
+    // basic color bkgrd test
+    * {
+        // background-color: green;
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+        body {
+            background-color: $darkblue;
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+                .sidebar {
+                    .header {
+                       img {
+                        width: 15vw;
+                        height: 15vw;
+                       }
+                    }
+                }
+                .page {
+                    // background-color: aquamarine;
+                    padding: 0 0 80vw 0;
+                    #personform {
+                        h1 {
+                            color: white;
+                            margin-left: 8vw;
+                            font-size: 6vw;
+                        }
+                        .apptbox {
+                            // fill here
+                            width: 100vw;
+                            // padding: 1vw;
+                            hr {
+                                display: none;
+                            }
+                            .personentry {
+                                // background-color: aquamarine;
+                                // display: flex;
+                                .title {
+                                    font-size: 4vw;
+                                    font-weight: 100;
+                                    // background-color: red;
+                                    margin-bottom: 2vw;
+                                }
+                                #name, #datetitle, #time, #phone, #topic {
+                                    // margin-top: 5vw;
+                                }
+                                .inputfield {
+                                    // background-color: aqua;
+                                    height: 4.5vh;
+                                    border: 2px solid white;
+                                    border-radius: 5px;
+                                    width: 80vw;
+                                    padding-top: 1.5vw;
+                                    input {
+                                        // font-size: 20vw;
+                                        // background-color: antiquewhite;
+                                    }
+                                }
+                            }
+                            // DATE Section
+                            .dateentry {
+                                // background-color: mediumaquamarine;
+                                display: flex;
+                                flex-direction: column;
+                                margin: 1vw 0 1vw 0;
+                                width: 80vw;
+                                #datetitle {
+                                    // background-color: red;
+                                    .title {
+                                        font-size: 4vw;
+                                        font-weight: 100;
+                                        // margin-bottom: 10vw;
+                                    }
+                                }
+                                .persondate {
+                                        // background-color: magenta;
+                                        // width: 100vw;
+                                        height: 4.5vh;
+                                        border: 2px solid white;
+                                        border-radius: 5px;
+                                        padding: 2vw 0 0 3vw;
+                                    }
+                            }
+                            // TIME Section
+                            .timeentry {
+                                // background-color: aqua;
+                                display: flex;
+                                flex-direction: column;
+                                .title {
+                                    font-size: 4vw;
+                                    font-weight: 100;
+                                }
+                                #timebuttons {
+                                    border: 2px solid white;
+                                    border-radius: 5px;
+                                    width: 80vw;
+                                    height: 4.5vh;
+                                    padding: 1.5vw 0 0 0;
+                                    .input-container {
+                                        width: 12vw;
+                                        height: 2.5vh;
+                                        // background-color: $darkblue;
+                                        // color: white;
+                                        // border: 2px solid white;
+                                        // font-size: 2vw;
+                                        .radio-tile {
+                                            label {
+                                                // color: white;
+                                                font-size: 2vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            // the BUTTONS section
+                            .buttondiv {
+                                padding: 14vw 0 0 0;
+                                    // background-color: lightseagreen;
+                                .calendar {
+                                        // background-color: lightcoral;
+                                    .back {
+                                        // background-color: lightblue;
+                                        a {
+                                            color: white;
+                                            font-size: 3vw;
+                                        }
+                                    }
+                                }
+                                .subbutton {
+                                        // background-color: lightseagreen;
+                                    button {
+                                        width: 12vw;
+                                        height: 12vw;
+                                        font-size: 2.5vw;
+                                    }
+                                }
+                                .list {
+                                    .personslist {
+                                        // background-color: yellowgreen;
+                                        a {
+                                            color: white;
+                                            font-size: 3vw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

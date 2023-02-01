@@ -1,0 +1,153 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+
+
+// Whole Page
+* {
+    list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+    // body
+    body {
+        display: flex;
+        background-color: $background;
+        //Sidebar
+        .sidebar {
+            background-color: $darkblue;
+            width: 280px;
+            height: 100vh;
+            padding: 20px 0;
+            position: fixed;
+            transition: all 0.5s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 550px;
+            // Sidebar Header
+            .header {
+                text-align: center;
+                margin: 20px;
+                color: white;
+            }
+            // Anonymous Login Button and header
+            .anonlogin {
+                text-align: center;
+                line-height: 40px;
+                p {
+                    font-size: large;
+                    color: white;
+                }
+                button {
+                    background-color: white;
+                    border: none;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    a {
+                        text-decoration: none;
+                        color: $darkblue;
+                        font-size: 2vh;
+                    }
+                }
+            }
+        }
+        .pagestuff {
+            text-align: center;
+            width: 100%;
+            padding-top: 70px;
+            // border: 1px red solid;
+            .pageheader {
+                // border: 1px green solid;
+                line-height: 50px;
+                p {
+                    font-size: 6vh;
+                    color: $darkblue;
+                    padding-top: 50px;
+                }
+                img {
+                    height: 300px;
+                    width: 300px;
+                    // border: 1px yellow solid;
+                }
+            }
+            .loginarea {
+                display: flex;
+                justify-content: center;
+                padding-top: 70px;
+                .login {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding: 51px;
+                    // background-color: red;
+                    p {
+                        font-size: 3vh;
+                        text-align: left;
+                        color: $darkblue;
+                    }
+                    input {
+                        width: 300px;
+                        height: 40px;
+                        padding-left: 10px;
+                        background-color: $darkblue;
+                        border: none;
+                        color: white;
+                    }
+                    ::placeholder {
+                        color: whitesmoke;
+                    }
+                    .googlelogin {
+                        // background-color: red;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-top: 10px;
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 10px;
+                            background-color: white;
+                            border: 1px solid $darkblue;
+                            // box-shadow: 1px 3px 2px 1px $darkblue;
+                            // border: none;
+                            width: 300px;
+                            height: 30px;
+                            a {
+                                font-weight: 600;
+                                padding-right: 5px;
+                                text-decoration: none;
+                                color: $darkblue;
+                            }
+                        }
+                    }
+                }
+                .loginbutton {
+                    // border: 1px green solid;
+                    align-self: center;
+                    padding-top: 50px;
+                    padding-bottom: 60px;
+                    // background-color: green;
+                    button {
+                        background-color: white;
+                        border: $darkblue 2px solid;
+                        width: 90px;
+                        height: 90px;
+                        border-radius: 50%;
+                        font-size: 2vh;
+                        a {
+                            text-decoration: none;
+                            color: $darkblue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

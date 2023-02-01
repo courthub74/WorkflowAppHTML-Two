@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+* body {
+  background-color: #F3F9FF;
+}
+* .sidebar {
+  background-color: #243F67;
+  width: 280px;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in;
+}
+* .sidebar .header {
+  text-align: center;
+  margin: 20px;
+}
+* .sidebar .header h2 {
+  color: white;
+  padding-bottom: 30px;
+}
+* .sidebar .header img {
+  width: 120px;
+  height: 120px;
+}
+* .sidebar .menu {
+  padding-top: 90px;
+  padding-left: 40px;
+}
+* .sidebar .menu ul li a {
+  padding-left: 10px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+}
+* .sidebar .menu ul li a .icon img {
+  top: 5px;
+  width: 25px;
+  display: inline-block;
+}
+* .sidebar .menu ul li a .check {
+  height: 20px;
+}
+* .sidebar .menu ul li a .check img {
+  width: 25px;
+}
+* .sidebar .logoutbutton {
+  padding-top: 200px;
+  height: 20px;
+  text-align: center;
+}
+* .sidebar .logoutbutton .logout {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+* .sidebar .logoutbutton .logout a {
+  color: #243F67;
+}
+* #instructions {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 857px;
+  color: #243F67;
+}
+* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+* .container .calendar {
+  border: 2px #243F67 solid;
+  border-radius: 5px;
+}
+* .container .calendar header {
+  display: flex;
+  gap: 400px;
+  position: relative;
+}
+* .container .calendar header .arrows {
+  padding: 20px;
+}
+* .container .calendar header .arrows #left {
+  border: 1px #243F67 solid;
+  border-radius: 50%;
+}
+* .container .calendar header .arrows #right {
+  border: 1px #243F67 solid;
+  border-radius: 50%;
+}
+* .container .calendar header p {
+  text-transform: uppercase;
+  padding-left: 38px;
+  font-size: 4vh;
+  font-weight: bold;
+  color: #243F67;
+}
+* .container .calendar table thead {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+* .container .calendar table thead tr td {
+  line-height: 4em;
+  text-align: center;
+  width: 4em;
+  font-size: 2vh;
+  color: #243F67;
+}
+* .container .calendar table tbody tr td {
+  background-color: #E2F1FF;
+  border-radius: 5px;
+  padding: 50px;
+  text-align: center;
+}
+* .container .calendar table tbody tr td button {
+  background-color: #E2F1FF;
+  border: none;
+}
+* .container .calendar table tbody tr .event {
+  background-color: #243F67;
+}
+* .container .calendar table tbody tr .event a {
+  color: white;
+}
+* .container .calendar table tbody tr .zoom {
+  background-color: #4375C0;
+}
+* .container .calendar table tbody tr .zoom a {
+  color: white;
+}
+* .container .calendar table tbody tr .phone {
+  background-color: #96B0D3;
+}
+* .container .calendar table tbody tr .deadline {
+  background-color: #971717;
+}
+* .container .calendar table tbody tr .deadline a {
+  color: white;
+}
+* .container .calendar table tbody tr .appearence {
+  background-color: #5589B9;
+}
+* .container .calendar table tbody tr .appearence a {
+  color: white;
+}
+* .container .calendar table tbody tr .prev-month {
+  color: lightgray;
+}
+* .container .calendar table tbody tr .next-month {
+  color: lightgray;
+}
+* .container #others {
+  width: 858px;
+  display: flex;
+  justify-content: flex-end;
+}
+* .container #others .margin {
+  width: 320px;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 45px;
+}
+* .container #others .margin span a {
+  display: flex;
+}
+* .container #others .margin span a img {
+  width: 30px;
+  height: 30px;
+}
+* .container #others .margin span a p {
+  padding: 8px;
+  color: #243F67;
+  font-weight: bold;
+}/*# sourceMappingURL=calendar.css.map */

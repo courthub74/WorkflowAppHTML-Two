@@ -1,0 +1,120 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+
+* {
+    list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+    body {
+        background-color: #F3F9FF;
+            .sidebar {
+                background: #243F67;
+                width: 280px;
+                height: 100vh;
+                padding: 20px 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                transition: all 0.5s ease;
+                .header {
+                    text-align: center;
+                    margin: 20px;
+                    h2 {
+                        color: white;
+                        padding-bottom: 30px;
+                    }
+                    img {
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+                .menu {
+                    padding-top: 90px;
+                    padding-left: 40px;
+                    ul {
+                        li {
+                            a {
+                                padding-left: 10px;
+                                font-size: 25px;
+                                text-decoration: none;
+                                color: white;
+                                line-height: 70px;
+                            }
+                            .icon {
+                                img {
+                                    top: 5px;
+                                    width: 25px;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+                .logoutbutton {
+                    padding-top: 200px;
+                    height: 20px;
+                    text-align: center;
+                    .logout {
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        background-color: white;
+                        border: none;
+                        color: $darkblue;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .page {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                height: 100vh;
+                .pagestuff {
+                    height: 80vh;
+                    text-align: left;
+                    .header {
+                        padding-bottom: 100px;
+                        p {
+                            font-size: 4vh;
+                            color: $darkblue;
+                            font-size: 65px;
+                        }
+                    }
+                    .recents {
+                        font-size: 45px;
+                        color: $darkblue;
+                        background-color: #F5F5F5;
+                    }
+                    .recentlist {
+                        padding-top: 80px;
+                        line-height: 70px;
+                        a {
+                            font-size: 20px;
+                        }
+                         #one {
+                            color: green;
+                        }
+                        #two {
+                            color: orange;
+                        }
+                        #three {
+                            color: red;
+                        }
+                        #four {
+                            color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="appointments.css">
+    <title>Make an Appointment</title>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+        <div class="header">
+            <!-- Sidebar Header -->
+            <a href="/homepage/home.html">
+                <h2>Workflow Machine</h2>
+                <img src="/img/white_logo_transparent_background.png" alt="logo">
+            </a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu">
+            <ul>
+                <li><a href="/calendar/calendar.html">
+                    <span class="icon"><img src="/img/bxs_calendar.png" alt="calendar"></span>
+                    <span class="item">calendar</span>
+                    <span class="check"><img src="/img/languages/check.png" alt="currentpage"></span>
+                </a></li>
+
+                <li><a href="/notes/notes.html">
+                    <span class="icon"><img src="/img/charm_notes-tick.png" alt="notes"></span>
+                    <span class="item">notes</span>
+                </a></li>
+
+                <li><a href="/tasks/tasks.html">
+                    <span class="icon"><img src="/img/clarity_tasks-line.png" alt="todos"></span>
+                    <span class="item">tasks</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="/img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                    <span class="item">spreadsheet</span>
+                </a></li>
+            </ul>
+        </div>
+
+        <!-- Logout Button -->
+        <div class="logoutbutton">
+            <button class="logout"><a href="/loginpage/login.html">Logout</a></button>
+        </div>
+    </div>
+
+    <div class="page">
+        <form action="POST">
+            <h1>Make an Appointment</h1>
+
+            <!-- The DATE when a date clicked on in the calendar -->
+            <p id="show"></p>
+
+            <div class="apptbox">
+                <h3>What is the appointment type?</h3>
+                <p><a href="/calendar/phonecall/phonecall.html">Phone Call</a></p>
+                <hr>
+                <p><a href="/calendar/zoomcall/zoomcall.html">Zoom Meeting</a></p>
+                <hr>
+                <p><a href="/calendar/inpersonmeeting/inperson.html">In Person Meeting</a></p>
+                <hr>
+                <p><a href="#">Appearence</a></p>
+                <hr>
+                <p><a href="#">Deadlines</a></p>
+            </div>
+        </form>
+        <!-- Appointment Settings -->
+        <div id="apptsettings">
+            <div id="gear">
+                <img src="/img/Settings.png" alt="settings">
+            </div>
+            <span><a href="#">Appointment Settings</a></span>
+        </div>
+    </div>
+    
+    <!-- JavaScript Link to query the calendar data -->
+    <script src="appointments.js">
+        // console.log("The first date set by local storage here");
+        // // Get the 1st of June and store it in a variable
+        // var first = localStorage.getItem("DATE1");
+        // // test print
+        // console.log('The first Date:', first);
+        // document.getElementById("show").innerHTML = first;
+
+        // function setDate1(){
+        //     console.log("The first date set by local storage here");
+        //     // Get the 1st of June and store it in a variable
+        //     var first = localStorage.getItem("DATE1");
+        //     // test print
+        //     console.log(first);
+        //     document.getElementById("show").innerHTML = first;
+        // }
+
+        // function setDate2(){
+        //     console.log("The second date set by local storage here");
+        //     // Get the 1st of June and store it in a variable
+        //     var second = localStorage.getItem("DATE2");
+        //     // test print
+        //     console.log(second);
+        //     document.getElementById("show").innerHTML = second;
+        // }
+    </script>
+</body>
+</html>

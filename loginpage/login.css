@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+* body {
+  display: flex;
+  background-color: #F3F9FF;
+}
+* body .sidebar {
+  background-color: #243F67;
+  width: 280px;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 550px;
+}
+* body .sidebar .header {
+  text-align: center;
+  margin: 20px;
+  color: white;
+}
+* body .sidebar .anonlogin {
+  text-align: center;
+  line-height: 40px;
+}
+* body .sidebar .anonlogin p {
+  font-size: large;
+  color: white;
+}
+* body .sidebar .anonlogin button {
+  background-color: white;
+  border: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+* body .sidebar .anonlogin button a {
+  text-decoration: none;
+  color: #243F67;
+  font-size: 2vh;
+}
+* body .pagestuff {
+  text-align: center;
+  width: 100%;
+  padding-top: 70px;
+}
+* body .pagestuff .pageheader {
+  line-height: 50px;
+}
+* body .pagestuff .pageheader p {
+  font-size: 6vh;
+  color: #243F67;
+  padding-top: 50px;
+}
+* body .pagestuff .pageheader img {
+  height: 300px;
+  width: 300px;
+}
+* body .pagestuff .loginarea {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+* body .pagestuff .loginarea .login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 51px;
+}
+* body .pagestuff .loginarea .login p {
+  font-size: 3vh;
+  text-align: left;
+  color: #243F67;
+}
+* body .pagestuff .loginarea .login input {
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+  background-color: #243F67;
+  border: none;
+  color: white;
+}
+* body .pagestuff .loginarea .login ::-moz-placeholder {
+  color: whitesmoke;
+}
+* body .pagestuff .loginarea .login :-ms-input-placeholder {
+  color: whitesmoke;
+}
+* body .pagestuff .loginarea .login ::placeholder {
+  color: whitesmoke;
+}
+* body .pagestuff .loginarea .login .googlelogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+* body .pagestuff .loginarea .login .googlelogin button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #243F67;
+  width: 300px;
+  height: 30px;
+}
+* body .pagestuff .loginarea .login .googlelogin button a {
+  font-weight: 600;
+  padding-right: 5px;
+  text-decoration: none;
+  color: #243F67;
+}
+* body .pagestuff .loginarea .loginbutton {
+  align-self: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+* body .pagestuff .loginarea .loginbutton button {
+  background-color: white;
+  border: #243F67 2px solid;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  font-size: 2vh;
+}
+* body .pagestuff .loginarea .loginbutton button a {
+  text-decoration: none;
+  color: #243F67;
+}/*# sourceMappingURL=login.css.map */

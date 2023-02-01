@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+* body {
+  height: 100vh;
+}
+* body .sidebar {
+  background-color: #243F67;
+  width: 280px;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5 ease-in;
+}
+* body .sidebar .header {
+  text-align: center;
+  margin: 20px;
+}
+* body .sidebar .header h2 {
+  color: white;
+  padding-bottom: 30px;
+}
+* body .sidebar .header img {
+  width: 120px;
+  height: 120px;
+}
+* body .sidebar .menu {
+  padding-top: 90px;
+  padding-left: 40px;
+}
+* body .sidebar .menu ul li a {
+  padding-left: 10px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+}
+* body .sidebar .menu ul li a .icon img {
+  top: 5px;
+  width: 25px;
+  display: inline-block;
+}
+* body .sidebar .menu ul li a .check {
+  height: 20px;
+}
+* body .sidebar .menu ul li a .check img {
+  width: 25px;
+}
+* body .sidebar .logoutbutton {
+  padding-top: 200px;
+  height: 20px;
+  text-align: center;
+}
+* body .sidebar .logoutbutton .logout {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+* body .sidebar .logoutbutton .logout a {
+  color: #243F67;
+}
+* body .container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* body .container .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-left: 280px;
+  line-height: 40px;
+  text-align: center;
+}
+* body .container .page h1 {
+  color: #4375C0;
+  font-size: 3.5rem;
+  padding-bottom: 80px;
+  padding-right: 70px;
+}
+* body .container .page .outline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #243F67;
+  border-radius: 5px;
+  height: 650px;
+  padding: 40px;
+}
+* body .container .page .outline .zooms {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px 30px 0px 0px;
+  height: 550px;
+  overflow-y: scroll;
+}
+* body .container .page .outline .zooms #zoom_items {
+  display: flex;
+  background-color: #4375C0;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in;
+  border-radius: 5px;
+}
+* body .container .page .outline .zooms #zoom_items #content {
+  width: 100%;
+}
+* body .container .page .outline .zooms #zoom_items #content input {
+  background-color: #4375C0;
+  border: none;
+  text-align: center;
+}
+* body .container .page .outline .zooms #zoom_items #content input:focus {
+  background-color: #4375C0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+* body .container .page .outline .zooms #zoom_items #content #zoomname {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 220px;
+}
+* body .container .page .outline .zooms #zoom_items #content #zoomdate {
+  color: white;
+  font-size: 1.1rem;
+  width: 150px;
+}
+* body .container .page .outline .zooms #zoom_items #content #zoomtime {
+  color: #FFF7D6;
+  font-size: 1.1rem;
+  width: 150px;
+}
+* body .container .page .outline .zooms #zoom_items #content #zoomnumber {
+  color: #FEFC00;
+  font-size: 1.1rem;
+  width: 150px;
+}
+* body .container .page .outline .zooms #zoom_items #content #zoomtopic {
+  color: #6cce63;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 300px;
+}
+* body .container .page .outline .zooms #zoom_items #content #zoomlink {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding-right: 5px;
+  width: 350px;
+}
+* body .container .page .outline .buttons {
+  display: flex;
+  gap: 10px;
+  padding-right: 20px;
+}
+* body .container .page .outline .buttons .delete {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  font-size: 10px;
+  color: white;
+}
+* body .container .page .outline .buttons .edit {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  font-size: 10px;
+  background-color: #4375C0;
+  color: #4375C0;
+}
+* body .container .page .outline .zooms::-webkit-scrollbar {
+  border: 1px solid #4375C0;
+  border-radius: 10px;
+}
+* body .container .page .outline .zooms::-webkit-scrollbar-thumb {
+  background: #4375C0;
+  border: 1px #4375C0 solid;
+  border-radius: 10px;
+}
+* body .container .page .outline .settings {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  padding: 5px 50px 0px 0px;
+}
+* body .container .page .outline .settings #gear {
+  height: 40px;
+  padding: 5px 5px 5px 0px;
+}
+* body .container .page .outline .settings #gear img {
+  width: 25px;
+  height: 25px;
+}
+* body .container .page .outline .settings a {
+  color: #243F67;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/*
+// HERE is where you want the frame
+                .outline {
+                    border: 2px solid $darkblue;
+                    // background-color: aqua;
+                    height: 700px;
+                    padding: 40px;
+                    .zooms {
+                        padding: 30px;
+                        // HERE SET THE HEIGHT FOR THE SCROLLBAR EFFECT
+                        height: 550px;
+                        // ADD A SCROLLAR FEATURE TO THIS DIV
+                        overflow-y: scroll;
+                        // Here is where you place the zoom call list items
+                        #zoom_items {
+                            background-color: $textfield;
+                            padding: 2rem;
+                            margin-bottom: 2rem;
+                            transition: all .3s ease-in;
+                            // height: 100px;
+                            #content {
+                                input {
+                                    background-color: $textfield;
+                                    border: none;
+                                    text-align: center;
+                                }
+                                input:focus {
+                                    background-color: $textfield;
+                                    appearance: none;
+                                    border: none;
+                                    outline: none;
+                                    text-align: center;
+                                }
+                                #zoomname {
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 1.3rem;
+                                    width: 220px;
+                                    // background-color: darkblue;
+                                }
+                                #zoomdate {
+                                    color: white;
+                                    font-size: 1.1rem;
+                                    width: 150px;
+                                    // background-color: darkmagenta;
+                                }
+                                #zoomtime {
+                                    color: $crossbuttoncream;
+                                    font-size: 1.1rem;
+                                    width: 150px;
+                                    // background-color: darkgoldenrod;
+                                }
+                                #zoomnumber {
+                                    color: $phonefield;
+                                    font-size: 1.1rem;
+                                    width: 150px;
+                                    // background-color: darkkhaki;
+                                }
+                                #zoomtopic {
+                                    color: $topicfield;
+                                    font-weight: bold;
+                                    font-size: 1.2rem;
+                                    width: 300px;
+                                    padding-left: 10px;
+                                    // background-color: darkorange;
+                                }
+                                #zoomlink {
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 1.1rem;
+                                    cursor: pointer;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    width: 350px;
+                                    // background-color: darkcyan;
+                                }
+                            }
+                        }
+                    }
+                    .zooms::-webkit-scrollbar {
+                        // background-color: $textfield;
+                        border: 1px solid $textfield;
+                        border-radius: 10px;
+                    }
+                    .zooms::-webkit-scrollbar-thumb {
+                        background: $textfield;
+                        // background: white;
+                        border: 1px $textfield solid;
+                        border-radius: 10px;
+                    }
+                    .settings {
+                        display: flex;
+                        // background-color: #6cce63;
+                        justify-content: right;
+                        padding: 30px 50px 0px 0px;
+                        #gear{
+                            // background-color: aqua;
+                            height: 40px;
+                            padding: 5px 5px 5px 0px;
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                        a {
+                        color: $darkblue;
+                        font-weight: bold;
+                        font-size: 1.3rem;
+                        }
+                    }                
+
+            }*//*# sourceMappingURL=zoomcalllist.css.map */

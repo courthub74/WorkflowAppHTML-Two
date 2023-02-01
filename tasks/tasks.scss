@@ -1,0 +1,205 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+$deliverablesgreen: rgb(6, 65, 6);
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: #F3F9FF;
+    }
+    .sidebar {
+        background-color: $darkblue;
+        width: 280px;
+        height: 100vh;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease;
+        .header {
+            text-align: center;
+            margin: 20px;
+            h2 {
+                color: white;
+                padding-bottom: 30px;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .menu {
+            padding-top: 30px;
+            padding-left: 40px;
+            ul {
+                li {
+                    a {
+                        padding-left: 10px;
+                        font-size: 25px;
+                        text-decoration: none;
+                        color: white;
+                        line-height: 70px;
+                        .icon {
+                            img {
+                                top: 5px;
+                                width: 25px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    .check {
+                        height: 20px;
+                        img {
+                            width: 25px;
+                            // height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+        .logoutbutton {
+            padding-top: 90px;
+            height: 20px;
+            text-align: center;
+            .logout {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: white;
+                border: none;
+                font-weight: bold;
+                a {
+                    color: $darkblue;
+                }
+            }
+        }
+    }
+
+   // BUTTONS OF TASKS
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 150px;
+    .title {
+        padding-top: 30px;
+        h1 {
+            font-size: 6vh;
+            color: $darkblue;
+        }
+    }
+    .page {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        .buttons {
+            // background-color: greenyellow;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 700px;
+            width: 1000px;
+            column-gap: 100px;
+            .button {
+                border: 3px solid;
+                width: 350px;
+                height: 90px;
+                text-align: center;
+                font-size: 2vh;
+                font-weight: bold;
+                line-height: 80px;
+            }
+            .col1 {
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                #deliverables {
+                    border: 3px solid $darkblue;
+                    border-radius: 5px;
+                    color: $background;
+                    background-color: $darkblue;
+                }
+                #deliverables:hover {
+                    background-color: $background;
+                    color: $darkblue;
+                    transition: all .5s ease-in;
+                }
+                #projects {
+                    border: 3px solid $darkblue;
+                    border-radius: 5px;
+                    color: $background;
+                    background-color: $darkblue;
+                }
+                #projects:hover {
+                    background-color: $background;
+                    color: $darkblue;
+                    transition: all .5s ease-in;
+                }
+                #practices {
+                    border: 3px solid $darkblue;
+                    border-radius: 5px;
+                    color: $background;
+                    background-color: $darkblue;
+                }
+                #practices:hover {
+                    background-color: $background;
+                    color: $darkblue;
+                    transition: all .5s ease-in;
+                }
+            }
+            .col2 {
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                // padding-left: 150px;
+                #classes {
+                    border: 3px solid $darkblue;
+                    border-radius: 5px;
+                    color: $background;
+                    background-color: $darkblue;
+                }
+                #classes:hover {
+                    background-color: $background;
+                    color: $darkblue;
+                    transition: all .5s ease-in;
+                }
+                #freelance {
+                    border: 3px solid $darkblue;
+                    border-radius: 5px;
+                    color: $background;
+                    background-color: $darkblue;
+                }
+                #freelance:hover {
+                    background-color: $background;
+                    color: $darkblue;
+                    transition: all .5s ease-in;
+                }
+                #appointments {
+                    border: 3px solid $darkblue;
+                    border-radius: 5px;
+                    color: $background;
+                    background-color: $darkblue;
+                }
+                #appointments:hover {
+                    background-color: $background;
+                    color: $darkblue;
+                    transition: all .5s ease-in;
+                }
+            }
+        }
+    }
+  }
+
+}

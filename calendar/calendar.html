@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="calendar.css">
+
+    <title>Calendar</title>
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+        <div class="header">
+            <!-- Sidebar Header -->
+            <a href="/homepage/home.html">
+                <h2>Workflow Machine</h2>
+                <img src="/img/white_logo_transparent_background.png" alt="logo">
+            </a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="menu">
+            <ul>
+                <li><a href="/calendar/calendar.html">
+                    <span class="icon"><img src="/img/bxs_calendar.png" alt="calendar"></span>
+                    <span class="item">calendar</span>
+                    <span class="check"><img src="/img/languages/check.png" alt="currentpage"></span> 
+                </a></li>
+
+                <li><a href="/notes/notes.html">
+                    <span class="icon"><img src="/img/charm_notes-tick.png" alt="notes"></span>
+                    <span class="item">notes</span>
+                </a></li>
+
+                <li><a href="/tasks/tasks.html">
+                    <span class="icon"><img src="/img/clarity_tasks-line.png" alt="todos"></span>
+                    <span class="item">tasks</span>
+                </a></li>
+
+                <li><a href="#">
+                    <span class="icon"><img src="/img/bi_file-earmark-spreadsheet.png" alt="calendar"></span>
+                    <span class="item">spreadsheet</span>
+                </a></li>
+            </ul>
+        </div>
+        <!-- Logout Button -->
+        <div class="logoutbutton">
+            <button class="logout"><a href="/loginpage/login.html">Logout</a></button>
+        </div>
+    </div>
+
+
+
+    <!-- CALENDAR -->
+
+    <div class="container">
+
+        <p id="instructions">Just click on the date to make an appointment on that date</p>
+        <div class="calendar">
+
+            <header>
+
+                <p>June 2023</p>
+
+                <div class="arrows">
+                <!-- Arrows -->
+                    <img id="left" src="../img/arrow-left.png" alt="lastmonth">
+                    <img id="right" src="../img/arrow-right.png" alt="nextmonth">
+                </div>
+
+            </header>
+
+        <form id="form" method="POST" action="/calendar/appointments/appointments.html">
+
+            <table>
+ 
+                <thead>
+         
+                  <tr>
+         
+                    <td>Mo</td>
+                    <td>Tu</td>
+                    <td>We</td>
+                    <td>Th</td>
+                    <td>Fr</td>
+                    <td>Sa</td>
+                    <td>Su</td>
+         
+                  </tr>
+         
+                </thead>
+
+                <tbody>
+ 
+                    <tr>
+                      <td class="prev-month">29</td>
+                      <td class="prev-month">30</td>
+                      <td class="prev-month">31</td>
+                        
+                      <!-- If I change it to Button it the date gets a definition and sends through local storage -->
+                      <td><button id="first" value="For: June 1st, 2023" onclick="submitDate1()">1</button></td>
+                      <td><a id="second" value="For: June 2nd, 2023" href="/calendar/appointments/appointments.html" onclick="submitDate2()">2</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">3</a></td>
+                      <td class="appearence"><a href="/calendar/appointments/appointments.html">4</a></td>
+                    </tr>
+                    <tr>
+           
+                      <td><a href="/calendar/appointments/appointments.html">5</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">6</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">7</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">8</a></td>
+                      <td class="event"><a href="/calendar/appointments/appointments9th.html">9</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">10</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">11</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="/calendar/appointments/appointments.html">12</a></td>
+                      <td class="zoom"><a href="/calendar/appointments/appointments.html">13</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">14</a></td>
+                      <td class="phone"><a href="/calendar/appointments/appointments.html">15</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">16</a></td>
+                      <td class="zoom"><a href="/calendar/appointments/appointments.html">17</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">18</a></td>
+                    </tr>
+                    <tr>
+           
+                      <td><a href="/calendar/appointments/appointments.html">19</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">20</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">21</a></td>
+                      <td class="event"><a href="/calendar/appointments/appointments.html">22</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">23</a></td>
+                      <td class="phone"><a href="/calendar/appointments/appointments.html">24</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">25</a></td>
+                    </tr>
+           
+                    <tr>
+           
+                      <td><a href="/calendar/appointments/appointments.html">26</a></td>
+                      <td class="phone"><a href="/calendar/appointments/appointments.html">27</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">28</a></td>
+                      <td><a href="/calendar/appointments/appointments.html">29</a></td>
+                      <td class="deadline"><a href="/calendar/appointments/appointments.html">30</a></td>
+                      <td class="next-month">1</td>
+                      <td class="next-month">2</td>
+                    </tr>
+           
+                  </tbody>
+
+            </table>
+
+        </form>
+
+        </div>  <!-- end calendar -->
+
+        <!-- OTHER APPOINTMENT OPTIONS -->
+        <div id="others"> 
+            <div class="margin">
+                <span><a href="/calendar/appointments/appointments.html"><img src="../img/calendar-add.png" alt="add appointment"><p>Make an Appointment</p></a></span>
+                <span><a href="createdappointments.html"><img src="../img/calendar-goto.png" alt="goto appointment"><p>Go to Created Appointments</p></a></span>
+            </div>
+        </div>
+
+    </div>  <!-- end container -->
+    
+
+    <!-- FIREBASE Connection -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+    <!-- JavaScript Link to appointments -->
+    <script src="calendar.js">
+        // NOW push it to another html page
+        // perform the submitForm function here
+        // function submitDate1(){
+        //     let first = document.getElementById("first");
+        //     let value1 = first.value;
+        //     localStorage.setItem("DATE1", value1);
+        // }
+        // function submitDate2(){
+        //     let second = document.getElementById("second");
+        //     let value2 = second.value;
+        //     localStorage.setItem("DATE1", value2);
+        // }
+        // THEN figure out how to make this work on just clicking the date
+    </script>
+
+</body>
+</html>

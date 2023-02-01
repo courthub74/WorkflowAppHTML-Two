@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+* body {
+  background-color: #F3F9FF;
+}
+* .sidebar {
+  background-color: #243F67;
+  width: 280px;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in;
+}
+* .sidebar .header {
+  text-align: center;
+  margin: 20px;
+}
+* .sidebar .header h2 {
+  color: white;
+  padding-bottom: 30px;
+}
+* .sidebar .header img {
+  width: 120px;
+  height: 120px;
+}
+* .sidebar .menu {
+  padding-top: 90px;
+  padding-left: 40px;
+}
+* .sidebar .menu ul li a {
+  color: white;
+  font-size: 25px;
+  padding-left: 10px;
+  line-height: 70px;
+}
+* .sidebar .menu ul li a .icon img {
+  top: 5px;
+  width: 25px;
+  display: inline-block;
+}
+* .sidebar .menu ul li a .check {
+  height: 20px;
+}
+* .sidebar .menu ul li a .check img {
+  width: 25px;
+}
+* .sidebar .logoutbutton {
+  padding-top: 200px;
+  height: 20px;
+  text-align: center;
+}
+* .sidebar .logoutbutton .logout {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  font-weight: bold;
+  background-color: white;
+}
+* .sidebar .logoutbutton .logout a {
+  color: #243F67;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 400px;
+  width: 90%;
+}
+.page .logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+.page .logo img {
+  width: 300px;
+}
+.page .line hr {
+  border: 1px solid #243F67;
+}
+.page .djangoheader {
+  color: #243F67;
+  padding: 30px 0 70px 0;
+}
+.page .djangoheader h2 {
+  font-size: 3.5vh;
+  background-color: #F5F5F5;
+  width: 680px;
+}
+.page .djangonotes {
+  line-height: 75px;
+}
+.page .djangonotes p a {
+  text-decoration: none;
+  color: #243F67;
+  font-size: 2vh;
+  font-weight: 505;
+}
+.page .djangonotes p #backto {
+  color: #3292FA;
+}/*# sourceMappingURL=django.css.map */

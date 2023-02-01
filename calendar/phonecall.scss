@@ -1,0 +1,361 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+
+// TEXT FIELD COLOR
+$textfield: #96B0D3;
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: $background;
+        .page {
+            // background-color: red;
+            height: 100vh;
+            width: 100%;
+            padding-top: 70px;
+            line-height: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                padding-bottom: 100px;
+                color: $textfield;
+                font-size: 3.5rem;
+            }
+            .apptbox {
+                border-radius: 5px;
+                line-height: 40px;
+                padding: 40px 20px;
+                background-color: $textfield;
+                width: 900px;
+                height: 650px;
+                #phonename {
+                    // background-color: aqua;
+                    display: flex;
+                    padding-right: 21rem;
+                    padding-bottom: 10px;
+                    padding-top: 20px;
+                    .name {
+                        color: $darkblue;
+                        font-weight: bold;
+                        font-size: 2.5vh;
+                    }
+                    .inputfield {
+                        // background-color: red;
+                        display: flex;
+                        .phone {
+                            border: none;
+                            background-color: $textfield;
+                            color: $darkblue;
+                            font-size: 2.3vh;
+                            width: 790px ;
+                            text-align: center;
+                            margin: 0 auto;
+                            padding-right: 48px;
+                        }
+                        input:focus {
+                            outline: none;
+                            
+                        }
+                    }
+                }
+                #phonedate {
+                    // background-color: green;
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    padding-right: 23rem;
+                    padding-bottom: 8px;
+                    padding-top: 30px;
+                    // Date label
+                    .date{
+                        color: $darkblue;
+                        font-weight: bold;
+                        font-size: 2.5vh;
+                        
+                    }
+                    // Date Picker
+                    .dateentry{
+                        select {
+                            cursor: pointer;
+                            appearance: none;
+                        }
+                        select:focus{
+                            outline: none;
+                        }
+                        #month {
+                            border: none;
+                            background-color: $textfield;
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                            color: $darkblue;
+                            text-align: center;
+                            margin-right: -19px;
+                        }
+                        #date {
+                            border: none;
+                            background-color: $textfield;
+                            font-size: 1.4rem;
+                            font-weight: bold;
+                            color: $darkblue;
+                            padding-right: 20px;
+                            text-align: center;
+                            margin-right: -20px;
+                        }
+                        #date:focus {
+                            outline: none;
+                        }
+                        #year {
+                            border: none;
+                            background-color: $textfield;
+                            font-size: 1.4rem;
+                            font-weight: bold;
+                            color: $darkblue;
+                        }
+                        #year:focus {
+                            outline: none;
+                        }
+                    }
+                    input {
+                        border: none;
+                        background-color: $textfield;
+                        color: $darkblue;
+                        width: 500rem;
+                        height: 2rem;
+                    }
+                }
+                #phonenumber {
+                    // background-color: green;
+                    display: flex;
+                    padding-right: 21rem;
+                    padding-bottom: 10px;
+                    padding-top: 20px;
+                    .number {
+                        color: $darkblue;
+                        font-weight: bold;
+                        font-size: 2.5vh;
+                    }
+                    .inputfield {
+                        display: flex;
+                        // justify-content: center
+                             
+                        .phone {
+                            border: none;
+                            background-color: $textfield;
+                            color: $darkblue;
+                            font-size: 2.3vh;
+                            width: 780px;
+                            text-align: center;
+                            margin: 0 auto;  
+                            padding-right: 60px;
+                        }
+                        input:focus {
+                            outline: none;
+                        }
+                    }
+                }
+                #phonetimes {
+                    // background-color: aqua;
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    padding-right: 25rem;
+                    .time {
+                        font-size: 2.5vh;
+                        padding-top: 20px;
+                        // background-color: goldenrod;
+                        padding-bottom: 20px;
+                        color: $darkblue;
+                        text-align: left;
+                    }
+                    input {
+                        border: none;
+                        background-color: $textfield;
+                        width: 160px;
+                        font-size: 2.5vh;
+                        color: $darkblue;
+                        font-weight: bold;
+                    }
+                    input:focus {
+                        outline: none;
+                    }
+                    input[type="time"]::-webkit-calendar-picker-indicator {
+                        filter: invert(21%) sepia(16%) saturate(1959%) hue-rotate(177deg) brightness(100%) contrast(93%);
+                    }
+                    // BELOW are the buttons
+                    #timebuttons {
+                        // background-color: aqua;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        padding: 10px 10px 0px 90px;
+                        button {
+                            width: 90px;
+                            height: 30px;
+                            background-color: $darkblue;
+                            color: $background;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                hr {
+                    height: 2px;
+                    background-color: $darkblue;
+                    border: none;
+                }
+                p {
+                    a {
+                        font-weight: 2VH;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+                #phonetopic {
+                    display: flex;
+                    // justify-content: space-around;
+                    // align-content: center;
+                    padding-right: 21rem;
+                    padding-bottom: 10px;
+                    padding-top: 20px;
+                    .topic {
+                        color: $darkblue;
+                        // font-weight: bold;
+                        font-size: 2.5vh;
+                        // padding-right: 80px;
+                        background-color: $textfield;
+                    }
+                    .inputfield {
+                        display: flex;
+                        .topic {
+                            border: none;
+                            text-align: center;
+                            width: 790px;
+                            margin: 0 auto;
+                            padding-right: 50px;
+                            font-size: 2.3vh;
+                        }
+                        input:focus {
+                            outline: none;
+                        }
+                    }
+                }
+                .buttondiv {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 230px;
+                    // background-color: green;
+                    padding-top: 100px;
+                    padding-bottom: 20px;
+                    padding-left: 5px;
+                    button {
+                        background-color: $darkblue;
+                        border: 1px $darkblue solid ;
+                        border-radius: 50%;
+                        width: 120px;
+                        height: 120px;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 1.3rem;
+                        cursor: pointer;
+                    }
+                    .back {
+                        padding: 80px 190px 0px 0px;
+                        a {
+                            color: $darkblue;
+                            font-size: 2.1vh;
+                        }
+                    }
+                    .callslist {
+                        padding: 80px 0px 0px 150px;
+                        a {
+                            color: $darkblue;
+                            font-size: 2.1vh;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar {
+            background-color: $darkblue;
+            width: 280px;
+            height: 100vh;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease-in;
+            .header {
+                text-align: center;
+                margin: 20px;
+                h2 {
+                    color: white;
+                    padding-bottom: 30px;
+                }
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            .menu {
+                padding-top: 90px;
+                padding-left: 40px;
+                ul {
+                    li {
+                        a {
+                            padding-left: 10px;
+                            font-size: 25px;
+                            color: white;
+                            text-decoration: none;
+                            line-height: 70px;
+                            .icon {
+                                img {
+                                    top: 5px;
+                                    width: 25px;
+                                    display: inline-block;
+                                }
+                            }
+                            .check {
+                                // background-color: red;
+                                height: 20px;
+                                img {
+                                    width: 25px;
+                                    // height: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .logoutbutton {
+                padding-top: 200px;
+                height: 20px;
+                text-align: center;
+                .logout {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    a {
+                        color: $darkblue;
+                    }
+                }
+            }
+        }
+    }
+}

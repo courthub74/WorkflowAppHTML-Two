@@ -1,0 +1,245 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+$placeholder: #6B7280;
+$thegreen: #3C908B;
+$alertblue: #3292FA;
+$editwhite: #E1F5F3;
+$otherbackground: #E2F1FF;
+$cream: #FFF7D6;
+
+// ACTION BUTTON COLORS
+$editbuttongreen: #11B386;
+$crossbuttoncream:#FFF7D6;
+$deletebuttonblue:#3292FA;
+$background: #F3F9FF;
+
+
+// WHOLE PAGE
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: #F3F9FF;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        .sidebar {
+            background-color: $darkblue;
+            width: 280px;
+            height: 100vh;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease;
+            .header {
+                text-align: center;
+                margin: 20px;
+                h2 {
+                    color: white;
+                    padding-bottom: 30px;
+                }
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            .menu {
+                padding-top: 90px;
+                padding-left: 40px;
+                ul {
+                    li {
+                        a {
+                            padding-left: 10px;
+                            font-size: 25px;
+                            text-decoration: none;
+                            color: white;
+                            line-height: 70px;
+                            .icon {
+                                img {
+                                    top: 5px;
+                                    width: 25px;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                        .check {
+                            height: 20px;
+                            img {
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .logoutbutton {
+                padding-top: 200px;
+                height: 20px;
+                text-align: center;
+                .logout {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    a {
+                        color: $darkblue;
+                    }
+                }
+            }
+        }
+        .wrapper {
+            .header{
+                padding: 2rem 1rem;
+                max-width: 800px;
+                // background-color: green;
+                width: 100%;
+                margin: 0 auto;
+                h1 {
+                    font-size: 2.5rem;
+                    color: $darkblue;
+                    font-weight: 400;
+                    margin-bottom: 1rem;
+                    // background-color: red;
+                }
+                #freelance-fill-form {
+                    display: flex;
+                }
+                #new-freelance-input {
+                    flex: 1 1 0%;
+                    background-color: $darkblue;
+                    color: white;
+                    padding: 1rem;
+                    margin-right: 1rem;
+                    font-size: 1.25rem;
+                    border: none;
+                    outline: none;
+                }
+                #new-freelance-input::placeholder {
+                    color: $placeholder;
+                }
+                #new-freelance-input:active {
+                    color: white;
+                    background-color: $darkblue;
+                }
+                #new-freelance-submit {
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    cursor: pointer;
+                    color: $darkblue;
+                    border: $darkblue 2px solid;
+                    background: none;
+                    padding: 5px;
+                }
+                #new-freelance-submit:hover {
+                    background-color: gainsboro;
+                    color: $darkblue;
+                    transition: all .3s ease-in;
+                }
+                
+                #new-freelance-submit:active {
+                    opacity: 0.6;
+                    color: #00C6BC;
+                    transition: all .1s ease-in;
+                    border-radius: 10px;
+                }
+            }
+
+
+            // PAGE BODY
+            main {
+                flex: 1 1 0%;
+                // background-color: aqua;
+                width: 100%;
+                max-width: 800px;
+                margin: 0 auto;
+                .freelance-list {
+                    padding: 1rem;
+                    #freelance_block {
+                        border: 2px solid $darkblue;
+                        padding: 30px;
+                        .freelance_items {
+                            display: flex;
+                            justify-content: space-between;
+                            background-color: $darkblue;
+                            color: white;
+                            // background-color: red;
+                            padding: 1rem;
+                            margin-bottom: 1rem;
+                            transition: all .3s ease-in;
+                            #content {
+                                .text {
+                                    font-weight: 600;
+                                }
+                                .crossed {
+                                    text-decoration: line-through;
+                                }
+                                .uncrossed {
+                                    text-decoration: none;
+                                }
+                                input {
+                                    background-color: $darkblue;
+                                    // background-color: red;
+                                    border: none;
+                                    color: white;
+                                    font-size: 1.5rem;
+                                    width: 100%;
+                                }
+                                input:not(:read-only) {
+                                    color: $editbuttongreen;
+                                    transition: all .4s ease-in;
+                                    appearance: none;
+                                    border: none;
+                                    outline: none;
+                                }
+                            }
+                            // NOW the ACTION buttons
+                            #buttons {
+                                display: flex;
+                                margin: 0 -0.5rem;
+                                button {
+                                    cursor: pointer;
+                                    margin: 0 0.5rem;
+                                    font-size: 1rem;
+                                    font-weight: 400;
+                                    text-transform: uppercase;
+                                    transition: 0.4s;
+                                }
+                                .edit {
+                                    background-color: $darkblue;
+                                    color: #11B386;
+                                    border: none;
+                                    font-size: 15px;
+                                    // padding: 1rem;
+                                }
+                                .delete {
+                                    color: $alertblue;
+                                    background-color: $darkblue;
+                                    border: none;
+                                    font-size: 15px;
+                                    // padding: 1rem;
+                                }
+                                .cross {
+                                    color: white;
+                                    background-color: $darkblue;
+                                    border: none;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+   

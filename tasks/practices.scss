@@ -1,0 +1,161 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+$thegreen: #3C908B;
+$alertblue: #3292FA;
+$otherbackground: #E2F1FF;
+
+
+// WHOLE PAGE
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: #F3F9FF;
+        background-color: $otherbackground;
+    }
+    .sidebar {
+        background-color: $darkblue;
+        width: 280px;
+        height: 100vh;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease;
+        .header {
+            text-align: center;
+            margin: 20px;
+            h2 {
+                color: white;
+                padding-bottom: 30px;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .menu {
+            padding-top: 90px;
+            padding-left: 40px;
+            ul {
+                li {
+                    a {
+                        padding-left: 10px;
+                        font-size: 25px;
+                        text-decoration: none;
+                        color: white;
+                        line-height: 70px;
+                        .icon {
+                            img {
+                                top: 5px;
+                                width: 25px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                    .check {
+                        height: 20px;
+                        img {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .logoutbutton {
+            padding-top: 200px;
+            height: 20px;
+            text-align: center;
+            .logout {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: white;
+                border: none;
+                font-weight: bold;
+                a {
+                    color: $darkblue;
+                }
+            }
+        }
+    }
+
+    .wrapper {
+        // background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 250px;
+        padding-top: 100px;
+        height: 100vh;
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: $darkblue;
+            width: 80%;
+            height: 90px;
+            color: white;
+            padding: 40px;
+            p {
+                font-size: 4vh;
+                padding-right: 100px;
+            }
+            .inputblock {
+                width: 100%;
+                input {
+                    margin: 0;
+                    border: none;
+                    border-radius: 0;
+                    width: 50%;
+                    height: 30%;
+                    padding: 10px;
+                    float: left;
+                    font-size: 16px;
+                    height: 40px;
+                }
+                .addPrac {
+                    // background-color: gainsboro;
+                    cursor: pointer;
+                    p {
+                        font-size: 15px;
+                        padding-top: 10px;
+                        color: $darkblue;
+                        background-color: gainsboro;
+                        width: 70%;
+                        height: 40px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .thelist {
+            border: 1px solid #afbcd1;
+            width: 80%;
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            #praclist {
+                .items {
+                    padding: 20px;
+                    font-size: 20px;
+                }
+                .checked {
+                    text-decoration: line-through; 
+                    border: $darkblue;
+                    background-color: $darkblue;
+                    color: white;
+                    padding: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+
+// WHOLE PAGE
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: $background;
+    }
+    .sidebar {
+        background-color: $darkblue;
+        width: 280px;
+        height: 100vh;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease-in;
+        .header {
+            text-align: center;
+            margin: 20px;
+            h2 {
+                color: white;
+                padding-bottom: 30px;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .menu {
+            padding-top: 90px;
+            padding-left: 40px;
+            ul {
+                li {
+                    a {
+                        color: white;
+                        font-size: 25px;
+                        padding-left: 10px;
+                        line-height: 70px;
+                        .icon {
+                            img {
+                                top: 5px;
+                                width: 25px;
+                                display: inline-block;
+                            }
+                        }
+                        .check {
+                            height: 20px;
+                            img {
+                                width: 25px;
+                                // height: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .logoutbutton {
+            padding-top: 200px;
+            height: 20px;
+            text-align: center;
+            .logout {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                border: none;
+                font-weight: bold;
+                background-color: white;
+                a {
+                    color: $darkblue;
+                }
+            }
+        }
+    }
+}
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 400px;
+    width: 90%;
+    .logo {
+        // background-color: green;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 20px;
+        img {
+            width: 300px;
+        }
+    }
+    .line {
+        hr {
+            border: 1px solid $darkblue;
+        }
+    }
+    .djangoheader {
+        color: $darkblue;
+        padding: 30px 0 70px 0;
+        h2 {
+            font-size: 3.5vh;
+            background-color: #F5F5F5;
+            width: 680px;
+        }
+    }
+    .djangonotes {
+        line-height: 75px;
+        p {
+            a {
+                text-decoration: none;
+                color: $darkblue;
+                font-size: 2vh;
+                font-weight: 505;
+            }
+            #backto {
+                color: #3292FA;
+            }
+        }
+    }
+}

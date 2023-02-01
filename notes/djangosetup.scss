@@ -1,0 +1,162 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+
+
+// WHOLE PAGE
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: #F3F9FF;
+        padding-bottom: 60px;
+    }
+    .sidebar {
+        background-color: $darkblue;
+        width: 280px;
+        height: 100vh;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: all 0.5s ease-in;
+        .header {
+            text-align: center;
+            margin: 20px;
+            h2 {
+                color: white;
+                padding-bottom: 30px;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        .menu {
+            padding-top: 90px;
+            padding-left: 40px;
+            ul {
+                li {
+                    a {
+                        padding-left: 10px;
+                        font-size: 25px;
+                        text-decoration: none;
+                        color: white;
+                        line-height: 70px;
+                        .icon {
+                            img {
+                                top: 5px;
+                                width: 25px;
+                                display: inline-block;
+                            }
+                        }
+                        .check {
+                            // background-color: red;
+                            height: 20px;
+                            img {
+                                width: 25px;
+                                // height: 35px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .logoutbutton {
+            padding-top: 200px;
+            height: 20px;
+            text-align: center;
+            .logout {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                background-color: white;
+                border: none;
+                font-weight: bold;
+                a {
+                    color: $darkblue;
+                }
+            }
+        }
+    }
+}
+.forbackbuttontoside {
+    display: flex;
+    .setupbox {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 400px;
+        width: 90%;
+        height: 100vh;
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            img {
+                width: 300px;
+            }
+        }
+        .line {
+            hr {
+                border: 1px solid $darkblue;
+            }
+        }
+        .djangoheader {
+            text-align: left;
+            padding: 30px 0 40px 0;
+            h2 {
+                font-size: 3.5vh;
+                background-color: #F5F5F5;
+                width: 680px;
+                color: $darkblue;
+            }
+        }
+        .setuplist {
+            text-align: left;
+            color: $darkblue;
+            font-size: 20px;
+            line-height: 45px;
+            width: 700px;
+            border: 1px solid $darkblue;
+            border-radius: 5px;
+            padding: 10px;
+            hr {
+                border: 1px solid linear-gradient(to right, red , yellow) ;
+            }
+            small {
+                font-size: medium;
+            }
+            .backbutton {
+                height: 40px;
+                width: 670px;
+                padding-top: 10px;
+                padding-bottom: 50px;
+                text-align: center;
+                p {
+                    img {
+                        height: 20px;
+                        padding-right: 10px;
+                        padding-top: 2px;
+                    }
+                    a {
+                        color: $darkblue;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+* body {
+  background-color: #F3F9FF;
+}
+* body .page {
+  height: 100vh;
+  width: 100%;
+  padding-top: 70px;
+  line-height: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body .page h1 {
+  padding-bottom: 100px;
+  color: #96B0D3;
+  font-size: 3.5rem;
+}
+* body .page .apptbox {
+  border-radius: 5px;
+  line-height: 40px;
+  padding: 40px 20px;
+  background-color: #96B0D3;
+  width: 900px;
+  height: 650px;
+}
+* body .page .apptbox #phonename {
+  display: flex;
+  padding-right: 21rem;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+* body .page .apptbox #phonename .name {
+  color: #243F67;
+  font-weight: bold;
+  font-size: 2.5vh;
+}
+* body .page .apptbox #phonename .inputfield {
+  display: flex;
+}
+* body .page .apptbox #phonename .inputfield .phone {
+  border: none;
+  background-color: #96B0D3;
+  color: #243F67;
+  font-size: 2.3vh;
+  width: 790px;
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 48px;
+}
+* body .page .apptbox #phonename .inputfield input:focus {
+  outline: none;
+}
+* body .page .apptbox #phonedate {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-right: 23rem;
+  padding-bottom: 8px;
+  padding-top: 30px;
+}
+* body .page .apptbox #phonedate .date {
+  color: #243F67;
+  font-weight: bold;
+  font-size: 2.5vh;
+}
+* body .page .apptbox #phonedate .dateentry select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+* body .page .apptbox #phonedate .dateentry select:focus {
+  outline: none;
+}
+* body .page .apptbox #phonedate .dateentry #month {
+  border: none;
+  background-color: #96B0D3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #243F67;
+  text-align: center;
+  margin-right: -19px;
+}
+* body .page .apptbox #phonedate .dateentry #date {
+  border: none;
+  background-color: #96B0D3;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #243F67;
+  padding-right: 20px;
+  text-align: center;
+  margin-right: -20px;
+}
+* body .page .apptbox #phonedate .dateentry #date:focus {
+  outline: none;
+}
+* body .page .apptbox #phonedate .dateentry #year {
+  border: none;
+  background-color: #96B0D3;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #243F67;
+}
+* body .page .apptbox #phonedate .dateentry #year:focus {
+  outline: none;
+}
+* body .page .apptbox #phonedate input {
+  border: none;
+  background-color: #96B0D3;
+  color: #243F67;
+  width: 500rem;
+  height: 2rem;
+}
+* body .page .apptbox #phonenumber {
+  display: flex;
+  padding-right: 21rem;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+* body .page .apptbox #phonenumber .number {
+  color: #243F67;
+  font-weight: bold;
+  font-size: 2.5vh;
+}
+* body .page .apptbox #phonenumber .inputfield {
+  display: flex;
+}
+* body .page .apptbox #phonenumber .inputfield .phone {
+  border: none;
+  background-color: #96B0D3;
+  color: #243F67;
+  font-size: 2.3vh;
+  width: 780px;
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 60px;
+}
+* body .page .apptbox #phonenumber .inputfield input:focus {
+  outline: none;
+}
+* body .page .apptbox #phonetimes {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-right: 25rem;
+}
+* body .page .apptbox #phonetimes .time {
+  font-size: 2.5vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #243F67;
+  text-align: left;
+}
+* body .page .apptbox #phonetimes input {
+  border: none;
+  background-color: #96B0D3;
+  width: 160px;
+  font-size: 2.5vh;
+  color: #243F67;
+  font-weight: bold;
+}
+* body .page .apptbox #phonetimes input:focus {
+  outline: none;
+}
+* body .page .apptbox #phonetimes input[type=time]::-webkit-calendar-picker-indicator {
+  filter: invert(21%) sepia(16%) saturate(1959%) hue-rotate(177deg) brightness(100%) contrast(93%);
+}
+* body .page .apptbox #phonetimes #timebuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 0px 90px;
+}
+* body .page .apptbox #phonetimes #timebuttons button {
+  width: 90px;
+  height: 30px;
+  background-color: #243F67;
+  color: #F3F9FF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+* body .page .apptbox hr {
+  height: 2px;
+  background-color: #243F67;
+  border: none;
+}
+* body .page .apptbox p a {
+  font-weight: 2VH;
+  text-decoration: none;
+  color: white;
+}
+* body .page .apptbox #phonetopic {
+  display: flex;
+  padding-right: 21rem;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+* body .page .apptbox #phonetopic .topic {
+  color: #243F67;
+  font-size: 2.5vh;
+  background-color: #96B0D3;
+}
+* body .page .apptbox #phonetopic .inputfield {
+  display: flex;
+}
+* body .page .apptbox #phonetopic .inputfield .topic {
+  border: none;
+  text-align: center;
+  width: 790px;
+  margin: 0 auto;
+  padding-right: 50px;
+  font-size: 2.3vh;
+}
+* body .page .apptbox #phonetopic .inputfield input:focus {
+  outline: none;
+}
+* body .page .apptbox .buttondiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+* body .page .apptbox .buttondiv button {
+  background-color: #243F67;
+  border: 1px #243F67 solid;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+* body .page .apptbox .buttondiv .back {
+  padding: 80px 190px 0px 0px;
+}
+* body .page .apptbox .buttondiv .back a {
+  color: #243F67;
+  font-size: 2.1vh;
+}
+* body .page .apptbox .buttondiv .callslist {
+  padding: 80px 0px 0px 150px;
+}
+* body .page .apptbox .buttondiv .callslist a {
+  color: #243F67;
+  font-size: 2.1vh;
+}
+* body .sidebar {
+  background-color: #243F67;
+  width: 280px;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in;
+}
+* body .sidebar .header {
+  text-align: center;
+  margin: 20px;
+}
+* body .sidebar .header h2 {
+  color: white;
+  padding-bottom: 30px;
+}
+* body .sidebar .header img {
+  width: 120px;
+  height: 120px;
+}
+* body .sidebar .menu {
+  padding-top: 90px;
+  padding-left: 40px;
+}
+* body .sidebar .menu ul li a {
+  padding-left: 10px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+}
+* body .sidebar .menu ul li a .icon img {
+  top: 5px;
+  width: 25px;
+  display: inline-block;
+}
+* body .sidebar .menu ul li a .check {
+  height: 20px;
+}
+* body .sidebar .menu ul li a .check img {
+  width: 25px;
+}
+* body .sidebar .logoutbutton {
+  padding-top: 200px;
+  height: 20px;
+  text-align: center;
+}
+* body .sidebar .logoutbutton .logout {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+* body .sidebar .logoutbutton .logout a {
+  color: #243F67;
+}/*# sourceMappingURL=phonecall.css.map */

@@ -1,0 +1,142 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        background-color: $background;
+        .page {
+            // background-color: red;
+            height: 100vh;
+            width: 100%;
+            padding-top: 100px;
+            line-height: 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                padding-bottom: 50px;
+                color: $darkblue;
+            }
+            h3 {
+                color: $darkblue;
+                padding-bottom: 20px;
+            }
+            .apptbox {
+                border-radius: 5px;
+                line-height: 70px;
+                padding: 20px;
+                background-color: #586E9A;
+                background-color: #3292FA;
+                background-color: $darkblue;
+                h3 {
+                    padding-bottom: 20px;
+                    color: white;
+                }
+                p {
+                    a {
+                        font-weight: 2VH;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+            #apptsettings {
+                display: flex;
+                padding-top: 10px;
+                // background-color: aqua;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    background-color: wheat;
+                }
+                span{
+                    background-color: white;
+                    a {
+                        color: $darkblue;
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+        }
+        .sidebar {
+            background-color: $darkblue;
+            width: 280px;
+            height: 100vh;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: all 0.5s ease-in;
+            .header {
+                text-align: center;
+                margin: 20px;
+                h2 {
+                    color: white;
+                    padding-bottom: 30px;
+                }
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            .menu {
+                padding-top: 90px;
+                padding-left: 40px;
+                ul {
+                    li {
+                        a {
+                            padding-left: 10px;
+                            font-size: 25px;
+                            color: white;
+                            text-decoration: none;
+                            line-height: 70px;
+                            .icon {
+                                img {
+                                    top: 5px;
+                                    width: 25px;
+                                    display: inline-block;
+                                }
+                            }
+                            .check {
+                                // background-color: red;
+                                height: 20px;
+                                img {
+                                    width: 25px;
+                                    // height: 35px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .logoutbutton {
+                padding-top: 200px;
+                height: 20px;
+                text-align: center;
+                .logout {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    a {
+                        color: $darkblue;
+                    }
+                }
+            }
+        }
+    }
+}

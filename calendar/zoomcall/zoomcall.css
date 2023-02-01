@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+* body {
+  background-color: #F3F9FF;
+}
+* body .sidebar {
+  background-color: #243F67;
+  width: 280px;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in;
+}
+* body .sidebar .header {
+  text-align: center;
+  margin: 20px;
+}
+* body .sidebar .header h2 {
+  color: white;
+  padding-bottom: 30px;
+}
+* body .sidebar .header img {
+  width: 120px;
+  height: 120px;
+}
+* body .sidebar .menu {
+  padding-top: 90px;
+  padding-left: 40px;
+}
+* body .sidebar .menu ul li a {
+  padding-left: 10px;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+}
+* body .sidebar .menu ul li a .icon img {
+  top: 5px;
+  width: 25px;
+  display: inline-block;
+}
+* body .sidebar .menu ul li a .check {
+  height: 20px;
+}
+* body .sidebar .menu ul li a .check img {
+  width: 25px;
+}
+* body .sidebar .logoutbutton {
+  padding-top: 200px;
+  height: 20px;
+  text-align: center;
+}
+* body .sidebar .logoutbutton .logout {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+* body .sidebar .logoutbutton .logout a {
+  color: #243F67;
+}
+* body .page {
+  height: 100vh;
+  width: 100%;
+  padding-top: 70px;
+  line-height: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body .page form h1 {
+  color: #4375C0;
+  font-size: 3.5rem;
+  padding-bottom: 100px;
+}
+* body .page form .apptbox {
+  background-color: #4375C0;
+  width: 900px;
+  height: 650px;
+  border-radius: 5px;
+  line-height: 40px;
+  padding: 40px 20px;
+}
+* body .page form .apptbox .zoomentry {
+  display: flex;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 21rem;
+}
+* body .page form .apptbox .zoomentry .title {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5vh;
+}
+* body .page form .apptbox .zoomentry .inputfield {
+  display: flex;
+}
+* body .page form .apptbox .zoomentry .inputfield input {
+  background-color: #4375C0;
+  border: none;
+  width: 790px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2.3vh;
+  padding-right: 70px;
+  color: white;
+}
+* body .page form .apptbox .zoomentry .inputfield input:focus {
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+}
+* body .page form .apptbox .zoomentry .inputfield input:-webkit-autofill,
+* body .page form .apptbox .zoomentry .inputfield input:-webkit-autofill:hover,
+* body .page form .apptbox .zoomentry .inputfield input:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 10px 1000px #4375C0 inset;
+  -webkit-transition: background-color 5000s ease-in-out 2s;
+  transition: background-color 5000s ease-in-out 2s;
+  font-size: 2.3vh;
+}
+* body .page form .apptbox .zoomentry .inputfield input:-webkit-autofill::first-line {
+  font-size: 2.3vh;
+}
+* body .page form .apptbox .zoomentry .zoomdate {
+  padding-top: 5px;
+  padding-left: 300px;
+}
+* body .page form .apptbox .zoomentry .zoomdate select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+* body .page form .apptbox .zoomentry .zoomdate select:focus {
+  outline: none;
+}
+* body .page form .apptbox .zoomentry .zoomdate #date {
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #4375C0;
+  color: white;
+  text-align: center;
+}
+* body .page form .apptbox .zoomentry #timebuttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px 5px 90px;
+}
+* body .page form .apptbox .zoomentry #timebuttons .input-container {
+  position: relative;
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  color: #4375C0;
+}
+* body .page form .apptbox .zoomentry #timebuttons .input-container input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+* body .page form .apptbox .zoomentry #timebuttons .input-container input[type=radio] {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  opacity: 0;
+  color: #4375C0;
+}
+* body .page form .apptbox .zoomentry #timebuttons .input-container .radio-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: all 300s ease;
+}
+* body .page form .apptbox .zoomentry #timebuttons .input-container .radio-tile label {
+  color: #4375C0;
+}
+* body .page form .apptbox hr {
+  height: 2px;
+  background-color: white;
+  border: none;
+}
+* body .page form .apptbox .buttondiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 90px 0px 0px 20px;
+}
+* body .page form .apptbox .buttondiv .calendar {
+  text-align: center;
+  padding: 80px 160px 0px 0px;
+}
+* body .page form .apptbox .buttondiv .calendar .back a {
+  color: white;
+  font-size: 2.1vh;
+}
+* body .page form .apptbox .buttondiv .subbutton {
+  padding-left: 12px;
+}
+* body .page form .apptbox .buttondiv .subbutton button {
+  border: none;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  color: #4375C0;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+* body .page form .apptbox .buttondiv .list {
+  text-align: center;
+  padding: 80px 10px 0px 145px;
+}
+* body .page form .apptbox .buttondiv .list .zoomslist a {
+  color: white;
+  font-size: 2.1vh;
+}/*# sourceMappingURL=zoomcall.css.map */

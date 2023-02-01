@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+// COLORS
+$darkblue: #243F67;
+$background: #F3F9FF;
+$crossbuttoncream: #FFF7D6;
+
+// TEXT FIELD COLOR
+$textfield: #4375C0;
+// PHONE NUM COLOR
+$phonefield: #FEFC00;
+// TOPIC FIELD COLOR
+$topicfield: #6cce63;
+// EDIT CREAM
+$editcream: #DEE36D;
+
+// ACTION BUTTON COLORS
+$editbuttongreen: #11B386;
+$crossbuttoncream:#FFF7D6;
+$deletebuttonblue:#3292FA;
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    body {
+        // background-color: aquamarine;
+        height: 100vh;
+        .sidebar {
+            background-color: $darkblue;
+            width: 280px;
+            height: 100vh;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: all 0.5 ease-in;
+            .header {
+                text-align: center;
+                margin: 20px;
+                h2 {
+                    color: white;
+                    padding-bottom: 30px;
+                }
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            .menu {
+                padding-top: 90px;
+                padding-left: 40px;
+                ul {
+                    li {
+                        a {
+                            padding-left: 10px;
+                            font-size: 25px;
+                            color: white;
+                            text-decoration: none;
+                            line-height: 70px;
+                            .icon {
+                                img {
+                                    top: 5px;
+                                    width: 25px;
+                                    display: inline-block;
+                                }
+                            }
+                            .check {
+                                height: 20px;
+                                img {
+                                    width: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .logoutbutton {
+                padding-top: 200px;
+                height: 20px;
+                text-align: center;
+                .logout {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background-color: white;
+                    border: none;
+                    font-weight: bold;
+                    a {
+                        color: $darkblue;
+                    }
+                }
+            }
+        }
+        // PAGE PART
+        // Put this in a container and center it
+        .container {
+            // background-color: yellow;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .page {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 70px;
+                padding-left: 280px;
+                line-height: 40px;
+                text-align: center;
+                // background-color: blue;
+                    h1 {
+                        color: $textfield;
+                        font-size: 3.5rem;
+                        padding-bottom: 80px;
+                        padding-right: 70px;
+                    }
+                    // HERE is where you want the frame
+                    .outline {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border: 2px solid $darkblue;
+                        border-radius: 5px;
+                        // background-color: aqua;
+                        height: 650px;
+                        padding: 40px;
+                        .zooms {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            // align-items: center;
+                            padding: 20px 30px 0px 0px;
+                            // HERE SET THE HEIGHT FOR THE SCROLLBAR EFFECT
+                            height: 550px;
+                            // height: 100vh;
+                            // ADD A SCROLLAR FEATURE TO THIS DIV
+                            overflow-y: scroll;
+                            // Here is where you place the zoom call list items
+                            // background-color: yellow;
+                            #zoom_items {
+                                display: flex;
+                                // justify-content: space-between;
+                                background-color: $textfield;
+                                padding: 2rem;
+                                margin-bottom: 2rem;
+                                transition: all .3s ease-in;
+                                border-radius: 5px;
+                                // height: 100px;
+                                #content {
+                                    width: 100%;
+                                    input {
+                                        background-color: $textfield;
+                                        border: none;
+                                        text-align: center;
+                                    }
+                                    input:focus {
+                                        background-color: $textfield;
+                                        appearance: none;
+                                        border: none;
+                                        outline: none;
+                                        text-align: center;
+                                    }
+                                    #zoomname {
+                                        color: white;
+                                        font-weight: bold;
+                                        font-size: 1.3rem;
+                                        width: 220px;
+                                        // background-color: darkblue;
+                                    }
+                                    #zoomdate {
+                                        color: white;
+                                        font-size: 1.1rem;
+                                        width: 150px;
+                                        // background-color: darkmagenta;
+                                    }
+                                    #zoomtime {
+                                        color: $crossbuttoncream;
+                                        font-size: 1.1rem;
+                                        width: 150px;
+                                        // background-color: darkgoldenrod;
+                                    }
+                                    #zoomnumber {
+                                        color: $phonefield;
+                                        font-size: 1.1rem;
+                                        width: 150px;
+                                        // background-color: darkkhaki;
+                                    }
+                                    #zoomtopic {
+                                        color: $topicfield;
+                                        font-weight: bold;
+                                        font-size: 1.2rem;
+                                        width: 300px;
+                                        // padding-left: 10px;
+                                        // background-color: darkorange;
+                                    }
+                                    #zoomlink {
+                                        color: white;
+                                        font-weight: bold;
+                                        font-size: 1.1rem;
+                                        cursor: pointer;
+                                        // padding-left: 10px;
+                                        padding-right: 5px;
+                                        width: 350px;
+                                        // background-color: darkcyan;
+                                    }
+                                }
+                            }
+                        }
+                        // Zoom Buttons
+                        .buttons {
+                            display: flex;
+                            gap: 10px;
+                            padding-right: 20px;
+                            // flex-direction: column;
+                            // gap: 50px;
+                            // background-color: #6cce63;
+                            // float: right;
+                            // width: 100%;
+                            // height: 100%;
+                            .delete {
+                                cursor: pointer;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50px;
+                                // border: #243F67 1px solid;
+                                border: none;
+                                font-size: 10px;
+                                color: white;
+                            }
+                            .edit {
+                                cursor: pointer;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50px;
+                                border: none;
+                                font-size: 10px;
+                                background-color: $textfield;
+                                color: $textfield;
+                            }
+                        }
+                        // zooms scrollbar
+                        .zooms::-webkit-scrollbar {
+                            // background-color: $textfield;
+                            border: 1px solid $textfield;
+                            border-radius: 10px;
+                        }
+                        .zooms::-webkit-scrollbar-thumb {
+                            background: $textfield;
+                            // background: white;
+                            border: 1px $textfield solid;
+                            border-radius: 10px;
+                        }
+                        .settings {
+                            display: flex;
+                            width: 100%;
+                            // background-color: #6cce63;
+                            justify-content: right;
+                            padding: 5px 50px 0px 0px;
+                            #gear{
+                                // background-color: aqua;
+                                height: 40px;
+                                padding: 5px 5px 5px 0px;
+                                img {
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                            }
+                            a {
+                            color: $darkblue;
+                            font-weight: bold;
+                            font-size: 1.3rem;
+                            }
+                        }                
+                    
+                }
+                    
+            }
+        }
+        
+    }
+}
+
+/*
+// HERE is where you want the frame
+                .outline {
+                    border: 2px solid $darkblue;
+                    // background-color: aqua;
+                    height: 700px;
+                    padding: 40px;
+                    .zooms {
+                        padding: 30px;
+                        // HERE SET THE HEIGHT FOR THE SCROLLBAR EFFECT
+                        height: 550px;
+                        // ADD A SCROLLAR FEATURE TO THIS DIV
+                        overflow-y: scroll;
+                        // Here is where you place the zoom call list items
+                        #zoom_items {
+                            background-color: $textfield;
+                            padding: 2rem;
+                            margin-bottom: 2rem;
+                            transition: all .3s ease-in;
+                            // height: 100px;
+                            #content {
+                                input {
+                                    background-color: $textfield;
+                                    border: none;
+                                    text-align: center;
+                                }
+                                input:focus {
+                                    background-color: $textfield;
+                                    appearance: none;
+                                    border: none;
+                                    outline: none;
+                                    text-align: center;
+                                }
+                                #zoomname {
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 1.3rem;
+                                    width: 220px;
+                                    // background-color: darkblue;
+                                }
+                                #zoomdate {
+                                    color: white;
+                                    font-size: 1.1rem;
+                                    width: 150px;
+                                    // background-color: darkmagenta;
+                                }
+                                #zoomtime {
+                                    color: $crossbuttoncream;
+                                    font-size: 1.1rem;
+                                    width: 150px;
+                                    // background-color: darkgoldenrod;
+                                }
+                                #zoomnumber {
+                                    color: $phonefield;
+                                    font-size: 1.1rem;
+                                    width: 150px;
+                                    // background-color: darkkhaki;
+                                }
+                                #zoomtopic {
+                                    color: $topicfield;
+                                    font-weight: bold;
+                                    font-size: 1.2rem;
+                                    width: 300px;
+                                    padding-left: 10px;
+                                    // background-color: darkorange;
+                                }
+                                #zoomlink {
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 1.1rem;
+                                    cursor: pointer;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    width: 350px;
+                                    // background-color: darkcyan;
+                                }
+                            }
+                        }
+                    }
+                    .zooms::-webkit-scrollbar {
+                        // background-color: $textfield;
+                        border: 1px solid $textfield;
+                        border-radius: 10px;
+                    }
+                    .zooms::-webkit-scrollbar-thumb {
+                        background: $textfield;
+                        // background: white;
+                        border: 1px $textfield solid;
+                        border-radius: 10px;
+                    }
+                    .settings {
+                        display: flex;
+                        // background-color: #6cce63;
+                        justify-content: right;
+                        padding: 30px 50px 0px 0px;
+                        #gear{
+                            // background-color: aqua;
+                            height: 40px;
+                            padding: 5px 5px 5px 0px;
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                        a {
+                        color: $darkblue;
+                        font-weight: bold;
+                        font-size: 1.3rem;
+                        }
+                    }                
+                
+            }*/
